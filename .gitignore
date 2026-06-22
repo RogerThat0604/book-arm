@@ -1,0 +1,11 @@
+venv/
+ocr_test/
+
+*.jpg
+*.jpeg
+*.png
+
+yolov8n.pt
+
+__pycache__/
+.vscode/
