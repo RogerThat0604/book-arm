@@ -1,11 +1,8 @@
+.local/
+.cache/
+.vscode-server/
 venv/
-ocr_test/
-
+__pycache__/
 *.jpg
 *.jpeg
 *.png
-
-yolov8n.pt
-
-__pycache__/
-.vscode/
