@@ -1,0 +1,14 @@
+[INFO] [1782179295.669527427] [arm_sorter_node_v4]: 🤖 Arm Sorter V4 시작
+[INFO] [1782179295.670044806] [arm_sorter_node_v4]: 📚 /book_category 구독 중...
+[INFO] [1782179299.257804318] [arm_sorter_node_v4]: 📥 카테고리 수신: 문학
+[INFO] [1782179299.258413881] [arm_sorter_node_v4]: 🏠 HOME 복귀
+[INFO] [1782179303.857748774] [arm_sorter_node_v4]: ✋ 그리퍼 열기
+[INFO] [1782179306.479802594] [arm_sorter_node_v4]: 📍 책 위로 이동
+[INFO] [1782179311.092966938] [arm_sorter_node_v4]: ⬇️ 책 잡는 위치로 이동
+[INFO] [1782179315.716289356] [arm_sorter_node_v4]: 🤏 그리퍼 닫기
+[INFO] [1782179319.338365175] [arm_sorter_node_v4]: ⬆️ 책 들기
+[INFO] [1782179323.941778776] [arm_sorter_node_v4]: 🚚 문학 바구니로 이동
+[INFO] [1782179328.564857675] [arm_sorter_node_v4]: 📖 책 놓기
+[INFO] [1782179328.565505164] [arm_sorter_node_v4]: ✋ 그리퍼 열기
+[INFO] [1782179331.186875595] [arm_sorter_node_v4]: 🏠 HOME 복귀
+[INFO] [1782179335.801244086] [arm_sorter_node_v4]: ✅ V4 Pick & Place 분류 완료

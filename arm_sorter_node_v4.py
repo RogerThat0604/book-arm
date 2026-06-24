@@ -37,6 +37,29 @@ class ArmSorterV4(Node):
         self.get_logger().info("🤖 Arm Sorter V4 시작")
         self.get_logger().info("📚 /book_category 구독 중...")
 
+    def track_book(self, dx):
+
+        current = self.mc.get_angles()
+
+        if not current:
+            return
+
+        wrist = current[5]
+
+        if dx < -30:
+            wrist += 3
+            print("⬅ 책이 왼쪽")
+
+        elif dx > 30:
+            wrist -= 3
+            print("➡ 책이 오른쪽")
+
+        else:
+            print("🎯 중앙")
+
+        current[5] = wrist
+        self.mc.send_angles(current, 20)
+
     def move(self, angles, speed=15, wait=3):
         self.mc.send_angles(angles, speed)
         time.sleep(wait)

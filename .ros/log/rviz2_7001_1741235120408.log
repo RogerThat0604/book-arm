@@ -1,0 +1,21 @@
+[INFO] [1741235121.921908796] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1741235121.922324741] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[INFO] [1741235122.096738130] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1741235122.554902574] [rviz]: Subscribing to: /local_costmap/voxel_marked_cloud
+
+[INFO] [1741235122.669381518] [rviz]: Subscribing to: /global_costmap/voxel_marked_cloud
+
+[INFO] [1741235122.770539277] [rviz]: Subscribing to: /local_costmap/voxel_marked_cloud
+
+[INFO] [1741235122.805294407] [rviz]: Subscribing to: /global_costmap/voxel_marked_cloud
+
+[INFO] [1741235124.597565202] [rviz2]: Trying to create a map of size 207 x 293 using 1 swatches
+[ERROR] [1741235124.643021943] [rviz2]: rviz/glsl120/indexed_8bit_image.vert
+rviz/glsl120/indexed_8bit_image.frag
+ GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1741235128.324224570] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[INFO] [1741235129.920543718] [rviz2]: Trying to create a map of size 207 x 293 using 1 swatches
+[INFO] [1741235138.183028101] [rviz2]: Setting estimate pose: Frame:map, Position(4.0162, 0.00759763, 0), Orientation(0, 0, 0.99959, 0.0286351) = Angle: 3.08431
+[INFO] [1741235148.712552336] [rviz2]: Setting estimate pose: Frame:map, Position(1.98643, -3.07922, 0), Orientation(0, 0, 0.685675, 0.727908) = Angle: 1.51106
+[INFO] [1741235181.043724131] [rclcpp]: signal_handler(signum=2)

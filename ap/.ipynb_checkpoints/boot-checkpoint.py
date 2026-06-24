@@ -1,0 +1,60 @@
+import RPi.GPIO as GPIO
+import time
+
+from pinky_lcd import LCD
+from PIL import Image, ImageSequence, ImageDraw, ImageFont
+import os, time
+
+result = open('/sys/class/net/eth0/address').read().strip()
+mac_address = result.strip().replace(":", "")
+
+ssid = f"pinky_{mac_address[-4:]}"
+password = "pinkyblue"
+
+text = f"SSID: {ssid}\nPW: {password}"
+
+BUZZER_PIN = 22
+GPIO.setmode(GPIO.BCM)
+GPIO.setup(BUZZER_PIN, GPIO.OUT)
+
+pwm = GPIO.PWM(BUZZER_PIN, 262)
+pwm.start(0)
+pwm.ChangeDutyCycle(50)
+time.sleep(0.3)
+pwm.ChangeFrequency(330)
+time.sleep(0.3)  
+pwm.ChangeFrequency(392)
+time.sleep(0.3)  
+pwm.ChangeDutyCycle(0)
+time.sleep(0.3)
+pwm.stop()
+
+GPIO.cleanup(BUZZER_PIN)
+
+lcd = LCD()
+
+img_width, img_height = 320, 240
+background_color = (0, 0, 0)
+text_color = (255, 255, 255)
+
+img = Image.new('RGB', (img_width, img_height), color=background_color)
+draw = ImageDraw.Draw(img)
+
+try:
+    font = ImageFont.truetype("/home/pinky/ap/ProggyCrossed_Regular.ttf", 30) # 글자크기 30으로 설정
+except:
+    font = ImageFont.load_default()
+
+# 이미지 가운데 좌표 계산 후 출력
+bbox = draw.textbbox((0, 0), text, font=font)
+text_width = bbox[2] - bbox[0]
+text_height = bbox[3] - bbox[1]
+x = (img_width - text_width) // 2
+y = (img_height - text_height) // 2
+
+draw.text((x, y), text, fill=text_color, font=font)
+
+lcd.img_show(img)
+time.sleep(90)
+
+lcd.close()

@@ -1,0 +1,22 @@
+[INFO] [1741077244.178867589] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/home/pinky/pinky_violet/install/pinky_cartographer/share/pinky_cartographer/params/initial_pose.lua' for 'initial_pose.lua'.
+[INFO] [1741077244.186804155] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[INFO] [1741077244.186956784] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[INFO] [1741077244.189181382] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[INFO] [1741077244.189281678] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[INFO] [1741077244.191371574] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[INFO] [1741077244.191527443] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[INFO] [1741077244.194017355] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[INFO] [1741077244.194548481] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[INFO] [1741077244.204664776] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[INFO] [1741077244.204824738] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[INFO] [1741077244.535069965] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 map_builder_bridge.cpp:136] Added trajectory with ID '0'.
+[WARN] [1741077245.535970146] [cartographer logger]: W20250304 17:34:05.-2147483648  4810 tf_bridge.cpp:53] "imu_link" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1741077245.746837666] [cartographer logger]: W20250304 17:34:05.-2147483648  4810 tf_bridge.cpp:53] "imu_link" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1741077245.962895693] [cartographer logger]: W20250304 17:34:05.-2147483648  4810 tf_bridge.cpp:53] "imu_link" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1741077246.170152716] [cartographer logger]: W20250304 17:34:06.-2147483648  4810 tf_bridge.cpp:53] "imu_link" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1741077246.383205280] [cartographer logger]: W20250304 17:34:06.-2147483648  4810 tf_bridge.cpp:53] "imu_link" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1741077246.589737104] [cartographer logger]: W20250304 17:34:06.-2147483648  4810 tf_bridge.cpp:53] "imu_link" passed to lookupTransform argument target_frame does not exist. 
+[WARN] [1741077246.790557775] [cartographer logger]: W20250304 17:34:06.-2147483648  4810 tf_bridge.cpp:53] "imu_link" passed to lookupTransform argument target_frame does not exist. 
+[INFO] [1741077246.858474425] [cartographer logger]: I20250304 17:34:06.-2147483648  4810 ordered_multi_queue.cc:172] All sensor data for trajectory 0 is available starting at '638766740463179260'.
+[INFO] [1741077246.868584330] [cartographer logger]: I20250304 17:34:06.-2147483648  4810 pose_graph_2d.cc:148] Inserted submap (0, 0).
+[INFO] [1741077318.511985341] [rclcpp]: signal_handler(signum=2)

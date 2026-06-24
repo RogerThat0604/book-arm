@@ -1,0 +1,141 @@
+import cv2
+import json
+import numpy as np
+from pyzbar.pyzbar import decode
+from PIL import Image, ImageDraw, ImageFont
+
+CAMERA_PATH = "/dev/jetcocam0"
+FONT_PATH = "/usr/share/fonts/truetype/nanum/NanumGothic.ttf"
+
+
+def put_korean_text(frame, text, position, font_size=22, color=(0, 255, 0)):
+    image = Image.fromarray(cv2.cvtColor(frame, cv2.COLOR_BGR2RGB))
+    draw = ImageDraw.Draw(image)
+    font = ImageFont.truetype(FONT_PATH, font_size)
+
+    rgb_color = (color[2], color[1], color[0])
+    draw.text(position, text, font=font, fill=rgb_color)
+
+    return cv2.cvtColor(np.array(image), cv2.COLOR_RGB2BGR)
+
+
+def parse_qr_data(data):
+    try:
+        book = json.loads(data)
+        title = book.get("title", "")
+        category = book.get("category", "")
+        book_id = book.get("id", "")
+
+        if title and category:
+            return f"{title} / {category}"
+
+        if title:
+            return title
+
+        return book_id if book_id else data
+
+    except Exception:
+        return data
+
+
+camera = cv2.VideoCapture(CAMERA_PATH)
+
+if not camera.isOpened():
+    print("카메라를 열 수 없습니다.")
+    exit()
+
+print("QR Test Start - q 키로 종료")
+
+try:
+    while True:
+        success, frame = camera.read()
+
+        if not success:
+            print("프레임을 읽을 수 없습니다.")
+            continue
+
+        codes = decode(frame)
+
+        for code in codes:
+            data = code.data.decode("utf-8", errors="ignore")
+            code_type = code.type
+
+            x, y, w, h = code.rect
+
+            cv2.rectangle(
+                frame,
+                (x, y),
+                (x + w, y + h),
+                (0, 255, 0),
+                2
+            )
+
+            if code.polygon and len(code.polygon) >= 4:
+                pts = [(p.x, p.y) for p in code.polygon]
+
+                for i in range(len(pts)):
+                    cv2.line(
+                        frame,
+                        pts[i],
+                        pts[(i + 1) % len(pts)],
+                        (255, 0, 0),
+                        2
+                    )
+
+                cx = int(sum(px for px, py in pts) / len(pts))
+                cy = int(sum(py for px, py in pts) / len(pts))
+            else:
+                cx = x + w // 2
+                cy = y + h // 2
+
+            cv2.circle(
+                frame,
+                (cx, cy),
+                5,
+                (0, 0, 255),
+                -1
+            )
+
+            label = parse_qr_data(data)
+
+            frame = put_korean_text(
+                frame,
+                f"{code_type}: {label}",
+                (x, max(20, y - 35)),
+                font_size=22,
+                color=(0, 255, 0)
+            )
+
+            cv2.putText(
+                frame,
+                f"center=({cx},{cy})",
+                (x, y + h + 25),
+                cv2.FONT_HERSHEY_SIMPLEX,
+                0.6,
+                (0, 0, 255),
+                2
+            )
+
+            print(f"type={code_type}, data={data}, center=({cx}, {cy})")
+
+        cv2.putText(
+            frame,
+            f"Detected: {len(codes)}",
+            (20, 40),
+            cv2.FONT_HERSHEY_SIMPLEX,
+            0.8,
+            (255, 255, 255),
+            2
+        )
+
+        cv2.imshow("QR Camera Test", frame)
+
+        if cv2.waitKey(1) & 0xFF == ord("q"):
+            break
+
+except KeyboardInterrupt:
+    print("\n종료")
+
+finally:
+    camera.release()
+    cv2.destroyAllWindows()

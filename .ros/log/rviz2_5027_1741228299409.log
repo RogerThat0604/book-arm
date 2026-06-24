@@ -1,0 +1,21 @@
+[INFO] [1741228300.769619140] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1741228300.769789973] [rviz2]: OpenGl version: 4.5 (GLSL 4.5)
+[INFO] [1741228300.891137325] [rviz2]: Stereo is NOT SUPPORTED
+[INFO] [1741228301.436614510] [rviz]: Subscribing to: /global_costmap/voxel_marked_cloud
+
+[INFO] [1741228301.494375825] [rviz]: Subscribing to: /local_costmap/voxel_marked_cloud
+
+[INFO] [1741228301.650110176] [rviz]: Subscribing to: /global_costmap/voxel_marked_cloud
+
+[INFO] [1741228301.680772602] [rviz]: Subscribing to: /local_costmap/voxel_marked_cloud
+
+[INFO] [1741228304.145077656] [rviz2]: Trying to create a map of size 207 x 293 using 1 swatches
+[INFO] [1741228304.147591805] [rviz2]: Trying to create a map of size 60 x 60 using 1 swatches
+[INFO] [1741228304.150941730] [rviz2]: Trying to create a map of size 207 x 293 using 1 swatches
+[ERROR] [1741228304.172447490] [rviz2]: rviz/glsl120/indexed_8bit_image.vert
+rviz/glsl120/indexed_8bit_image.frag
+ GLSL link result : 
+active samplers with a different type refer to the same texture image unit
+[INFO] [1741228320.088927091] [rviz2]: Setting estimate pose: Frame:map, Position(3.96101, -0.00786388, 0), Orientation(0, 0, -0.699857, 0.714283) = Angle: -1.55039
+[INFO] [1741228342.218844097] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[INFO] [1741228405.670016170] [rclcpp]: signal_handler(signum=2)

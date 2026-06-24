@@ -1,0 +1,81 @@
+1741077239.6182723 [INFO] [launch]: All log files can be found below /home/pinky/.ros/log/2025-03-04-17-33-59-615509-raspi-4728
+1741077239.6187730 [INFO] [launch]: Default logging verbosity is set to INFO
+1741077243.4917417 [INFO] [component_container_isolated-1]: process started with pid [4808]
+1741077243.4924057 [INFO] [initialpose.py-2]: process started with pid [4809]
+1741077243.4995320 [INFO] [cartographer_node-3]: process started with pid [4810]
+1741077244.1799579 [cartographer_node-3] [INFO] [1741077244.178867589] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/home/pinky/pinky_violet/install/pinky_cartographer/share/pinky_cartographer/params/initial_pose.lua' for 'initial_pose.lua'.
+1741077244.1879036 [cartographer_node-3] [INFO] [1741077244.186804155] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+1741077244.1900351 [cartographer_node-3] [INFO] [1741077244.186956784] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+1741077244.1926610 [cartographer_node-3] [INFO] [1741077244.189181382] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+1741077244.1955967 [cartographer_node-3] [INFO] [1741077244.189281678] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+1741077244.1973255 [cartographer_node-3] [INFO] [1741077244.191371574] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+1741077244.2023232 [cartographer_node-3] [INFO] [1741077244.191527443] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+1741077244.2041268 [cartographer_node-3] [INFO] [1741077244.194017355] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+1741077244.2052970 [cartographer_node-3] [INFO] [1741077244.194548481] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+1741077244.2060864 [cartographer_node-3] [INFO] [1741077244.204664776] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+1741077244.2064111 [cartographer_node-3] [INFO] [1741077244.204824738] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+1741077244.5366931 [cartographer_node-3] [INFO] [1741077244.535069965] [cartographer logger]: I20250304 17:34:04.-2147483648  4810 map_builder_bridge.cpp:136] Added trajectory with ID '0'.
+1741077245.2331564 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/controller_server' in container 'nav2_container'
+1741077245.5377059 [cartographer_node-3] [WARN] [1741077245.535970146] [cartographer logger]: W20250304 17:34:05.-2147483648  4810 tf_bridge.cpp:53] "imu_link" passed to lookupTransform argument target_frame does not exist. 
+1741077245.6265087 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/map_server' in container 'nav2_container'
+1741077245.7277772 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/smoother_server' in container 'nav2_container'
+1741077245.7528503 [cartographer_node-3] [WARN] [1741077245.746837666] [cartographer logger]: W20250304 17:34:05.-2147483648  4810 tf_bridge.cpp:53] "imu_link" passed to lookupTransform argument target_frame does not exist. 
+1741077245.8686771 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_localization' in container 'nav2_container'
+1741077245.9839344 [cartographer_node-3] [WARN] [1741077245.962895693] [cartographer logger]: W20250304 17:34:05.-2147483648  4810 tf_bridge.cpp:53] "imu_link" passed to lookupTransform argument target_frame does not exist. 
+1741077246.1737669 [cartographer_node-3] [WARN] [1741077246.170152716] [cartographer logger]: W20250304 17:34:06.-2147483648  4810 tf_bridge.cpp:53] "imu_link" passed to lookupTransform argument target_frame does not exist. 
+1741077246.2872005 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/planner_server' in container 'nav2_container'
+1741077246.3850956 [cartographer_node-3] [WARN] [1741077246.383205280] [cartographer logger]: W20250304 17:34:06.-2147483648  4810 tf_bridge.cpp:53] "imu_link" passed to lookupTransform argument target_frame does not exist. 
+1741077246.4336965 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/behavior_server' in container 'nav2_container'
+1741077246.5014706 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/bt_navigator' in container 'nav2_container'
+1741077246.5852518 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/waypoint_follower' in container 'nav2_container'
+1741077246.5899935 [cartographer_node-3] [WARN] [1741077246.589737104] [cartographer logger]: W20250304 17:34:06.-2147483648  4810 tf_bridge.cpp:53] "imu_link" passed to lookupTransform argument target_frame does not exist. 
+1741077246.6556544 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/velocity_smoother' in container 'nav2_container'
+1741077246.7769303 [INFO] [launch_ros.actions.load_composable_nodes]: Loaded node '/lifecycle_manager_navigation' in container 'nav2_container'
+1741077246.7928376 [cartographer_node-3] [WARN] [1741077246.790557775] [cartographer logger]: W20250304 17:34:06.-2147483648  4810 tf_bridge.cpp:53] "imu_link" passed to lookupTransform argument target_frame does not exist. 
+1741077246.8623967 [cartographer_node-3] [INFO] [1741077246.858474425] [cartographer logger]: I20250304 17:34:06.-2147483648  4810 ordered_multi_queue.cc:172] All sensor data for trajectory 0 is available starting at '638766740463179260'.
+1741077246.8987653 [cartographer_node-3] [INFO] [1741077246.868584330] [cartographer logger]: I20250304 17:34:06.-2147483648  4810 pose_graph_2d.cc:148] Inserted submap (0, 0).
+1741077318.5124602 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1741077318.5627575 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741077318.5643733 [cartographer_node-3] [INFO] [1741077318.511985341] [rclcpp]: signal_handler(signum=2)
+1741077318.5850840 [cartographer_node-3] [INFO] [1741077318.539976244] [cartographer logger]: I20250304 17:35:18.-2147483648  4810 node.cpp:569] Shutdown the subscriber of [scan]
+1741077318.5854113 [cartographer_node-3] [INFO] [1741077318.545415659] [cartographer logger]: I20250304 17:35:18.-2147483648  4810 node.cpp:569] Shutdown the subscriber of [imu]
+1741077318.5857105 [cartographer_node-3] [INFO] [1741077318.545481066] [cartographer logger]: I20250304 17:35:18.-2147483648  4810 map_builder_bridge.cpp:152] Finishing trajectory with ID '0'...
+1741077318.5860763 [cartographer_node-3] [INFO] [1741077318.545639676] [cartographer logger]: I20250304 17:35:18.-2147483648  4810 collated_trajectory_builder.cc:81] imu rate: 4.63 Hz 2.16e-01 s +/- 5.64e-02 s (pulsed at 118.48% real time)
+1741077318.5863163 [cartographer_node-3] [INFO] [1741077318.545695491] [cartographer logger]: I20250304 17:35:18.-2147483648  4810 collated_trajectory_builder.cc:81] scan rate: 10.08 Hz 9.92e-02 s +/- nan s (pulsed at 0.15% real time)
+1741077318.5868144 [cartographer_node-3] [INFO] [1741077318.562805324] [rclcpp]: signal_handler(signum=2)
+1741077318.5877142 [cartographer_node-3] [WARN] [1741077318.566389156] [cartographer logger]: W20250304 17:35:18.-2147483648  4810 node.cpp:773] Can't run final optimization if there are one or more active trajectories. Trying to finish trajectory with ID 0 now.
+1741077318.5879743 [cartographer_node-3] [INFO] [1741077318.566444878] [cartographer logger]: I20250304 17:35:18.-2147483648  4810 node.cpp:551] Trajectory 0 already pending to finish.
+1741077318.5881946 [cartographer_node-3] [INFO] [1741077318.566468063] [cartographer logger]: I20250304 17:35:18.-2147483648  4810 map_builder_bridge.cpp:161] Running final trajectory optimization...
+1741077318.5892529 [cartographer_node-3] [INFO] [1741077318.573779912] [cartographer logger]: I20250304 17:35:18.-2147483648  4847 pose_graph_2d.cc:538] Remaining work items in queue: 2
+1741077318.5897205 [cartographer_node-3] [INFO] [1741077318.573862152] [cartographer logger]: I20250304 17:35:18.-2147483648  4847 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+1741077318.5900316 [cartographer_node-3] [INFO] [1741077318.573887115] [cartographer logger]: I20250304 17:35:18.-2147483648  4847 constraint_builder_2d.cc:292] Score histogram:
+1741077318.5903373 [cartographer_node-3] Count: 0
+1741077318.5906005 [cartographer_node-3] [WARN] [1741077318.574777203] [cartographer logger]: W20250304 17:35:18.-2147483648  4847 preprocessor.cc:67] Specified options.num_threads: 7 exceeds maximum available from the threading model Ceres was compiled with: 4.  Bounding to maximum number available.
+1741077318.6133633 [ERROR] [initialpose.py-2]: process has died [pid 4809, exit code -2, cmd '/home/pinky/pinky_violet/install/pinky_navigation/lib/pinky_navigation/initialpose.py --ros-args -r __node:=initialpose -r __ns:=/'].
+1741077318.6349490 [cartographer_node-3] [INFO] [1741077318.633698457] [cartographer logger]: I20250304 17:35:18.-2147483648  4847 pose_graph_2d.cc:538] Remaining work items in queue: 1
+1741077318.6358492 [cartographer_node-3] [INFO] [1741077318.633793326] [cartographer logger]: I20250304 17:35:18.-2147483648  4847 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+1741077318.6367567 [cartographer_node-3] [INFO] [1741077318.633819771] [cartographer logger]: I20250304 17:35:18.-2147483648  4847 constraint_builder_2d.cc:292] Score histogram:
+1741077318.6369729 [cartographer_node-3] Count: 0
+1741077318.6395490 [cartographer_node-3] [WARN] [1741077318.634304305] [cartographer logger]: W20250304 17:35:18.-2147483648  4847 preprocessor.cc:67] Specified options.num_threads: 7 exceeds maximum available from the threading model Ceres was compiled with: 4.  Bounding to maximum number available.
+1741077318.6425395 [cartographer_node-3] [INFO] [1741077318.642160337] [cartographer logger]: I20250304 17:35:18.-2147483648  4844 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+1741077318.6463997 [cartographer_node-3] [INFO] [1741077318.642213855] [cartographer logger]: I20250304 17:35:18.-2147483648  4844 constraint_builder_2d.cc:292] Score histogram:
+1741077318.6485665 [cartographer_node-3] Count: 0
+1741077318.6505489 [cartographer_node-3] [KOptimizing: Done.     
+1741077318.7090011 [cartographer_node-3] [INFO] [1741077318.706848355] [cartographer logger]: I20250304 17:35:18.-2147483648  4845 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+1741077318.7139266 [cartographer_node-3] [INFO] [1741077318.706927262] [cartographer logger]: I20250304 17:35:18.-2147483648  4845 constraint_builder_2d.cc:292] Score histogram:
+1741077318.7140651 [cartographer_node-3] Count: 0
+1741077318.7145600 [cartographer_node-3] [KOptimizing: Done.     
+1741077318.7240794 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741077318.7276878 [cartographer_node-3] [INFO] [1741077318.717584686] [rclcpp]: signal_handler(signum=2)
+1741077318.9209032 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741077318.9499631 [ERROR] [cartographer_node-3]: process has died [pid 4810, exit code -2, cmd '/opt/ros/jazzy/lib/cartographer_ros/cartographer_node -configuration_directory /home/pinky/pinky_violet/install/pinky_cartographer/share/pinky_cartographer/params -configuration_basename initial_pose.lua --ros-args -r __node:=cartographer_node -r __ns:=/ --params-file /tmp/launch_params_f1zffjll'].
+1741077319.1219218 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741077319.1713834 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741077319.3591433 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741077319.5708835 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741077352.7210042 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741077353.0374098 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741077353.1988521 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741077353.3463876 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741077353.5160468 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741077353.6555736 [ERROR] [component_container_isolated-1]: process has died [pid 4808, exit code -6, cmd '/opt/ros/jazzy/lib/rclcpp_components/component_container_isolated --ros-args --log-level info --ros-args -r __node:=nav2_container -r __ns:=/ --params-file /home/pinky/pinky_violet/install/pinky_navigation/share/pinky_navigation/params/nav2_params.yaml --params-file /tmp/launch_params_xt2nxdzp --params-file /tmp/launch_params_3mjqer68 --params-file /tmp/launch_params_gkib2_mh -r /tf:=tf -r /tf_static:=tf_static'].

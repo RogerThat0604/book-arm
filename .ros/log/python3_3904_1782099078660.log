@@ -1,0 +1,5 @@
+[INFO] [1782099082.919606730] [arm_sorter_node]: 📚 Arm Sorter Node 시작
+[INFO] [1782099082.920106764] [arm_sorter_node]: /book_category 구독 중...
+[INFO] [1782099092.904164134] [arm_sorter_node]: 📥 카테고리 수신: 문학
+[INFO] [1782099092.904553280] [arm_sorter_node]: 🤖 실제 팔 이동 시작: 문학
+[INFO] [1782099102.151200288] [arm_sorter_node]: ✅ 실제 팔 이동 완료

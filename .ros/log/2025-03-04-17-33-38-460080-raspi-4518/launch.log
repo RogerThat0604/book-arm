@@ -1,0 +1,12 @@
+1741077218.4635999 [INFO] [launch]: All log files can be found below /home/pinky/.ros/log/2025-03-04-17-33-38-460080-raspi-4518
+1741077218.4638321 [INFO] [launch]: Default logging verbosity is set to INFO
+1741077218.7213435 [INFO] [rviz2-1]: process started with pid [4521]
+1741077553.0633218 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1741077553.2503600 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741077554.1741223 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741077554.3722310 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741077558.0845852 [ERROR] [rviz2-1]: process[rviz2-1] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1741077558.0859380 [INFO] [rviz2-1]: sending signal 'SIGTERM' to process[rviz2-1]
+1741077563.0867825 [ERROR] [rviz2-1]: process[rviz2-1] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+1741077563.0884299 [INFO] [rviz2-1]: sending signal 'SIGKILL' to process[rviz2-1]
+1741077563.1490664 [ERROR] [rviz2-1]: process has died [pid 4521, exit code -9, cmd '/opt/ros/jazzy/lib/rviz2/rviz2 -d /home/pinky/pinky_violet/install/pinky_navigation/share/pinky_navigation/rviz/nav2_view.rviz --ros-args'].

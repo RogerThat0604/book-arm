@@ -1,0 +1,7 @@
+1741234236.5781298 [INFO] [launch]: All log files can be found below /home/pinky/.ros/log/2025-03-06-13-10-36-575954-raspi-6106
+1741234236.5784903 [INFO] [launch]: Default logging verbosity is set to INFO
+1741234236.9085736 [INFO] [rviz2-1]: process started with pid [6142]
+1741234360.3359427 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1741234360.5112634 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741234360.6729944 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741234360.7345419 [ERROR] [rviz2-1]: process has died [pid 6142, exit code -2, cmd '/opt/ros/jazzy/lib/rviz2/rviz2 -d /home/pinky/pinky_violet/install/pinky_navigation/share/pinky_navigation/rviz/nav2_view.rviz --ros-args'].

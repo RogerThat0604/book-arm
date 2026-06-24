@@ -1,0 +1,125 @@
+1741233630.8489079 [INFO] [launch]: All log files can be found below /home/pinky/.ros/log/2025-03-06-13-00-30-845923-raspi-5621
+1741233630.8498755 [INFO] [launch]: Default logging verbosity is set to INFO
+1741233631.9102943 [INFO] [robot_state_publisher-1]: process started with pid [5702]
+1741233631.9161065 [INFO] [sllidar_node-2]: process started with pid [5703]
+1741233631.9183176 [INFO] [icm20948_node-3]: process started with pid [5704]
+1741233631.9186058 [INFO] [pinky_bringup-4]: process started with pid [5705]
+1741233631.9189744 [INFO] [pinky_battery_publiser-5]: process started with pid [5706]
+1741233634.3966408 [pinky_bringup-4] [INFO] [1741233634.396173998] [pinky_bringup]: pinky is ready!!
+1741233726.2791808 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1741233726.3713427 [pinky_battery_publiser-5] Traceback (most recent call last):
+1741233726.4215767 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741233726.4228501 [pinky_battery_publiser-5] Traceback (most recent call last):
+1741233726.4231684 [pinky_battery_publiser-5]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_battery_publiser", line 33, in <module>
+1741233726.4233396 [pinky_battery_publiser-5]     handler, entity, node = self.wait_for_ready_callbacks(
+1741233726.4234700 [pinky_battery_publiser-5]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1741233726.4235706 [pinky_battery_publiser-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 781, in wait_for_ready_callbacks
+1741233726.4236929 [pinky_battery_publiser-5]     return next(self._cb_iter)
+1741233726.4248681 [pinky_battery_publiser-5]            ^^^^^^^^^^^^^^^^^^^
+1741233726.4251590 [pinky_battery_publiser-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+1741233726.4253602 [pinky_battery_publiser-5]     wait_set.wait(timeout_nsec)
+1741233726.4255409 [pinky_battery_publiser-5] KeyboardInterrupt
+1741233726.4257300 [pinky_battery_publiser-5]  in spin
+1741233726.4260449 [pinky_battery_publiser-5]     executor.spin_once()
+1741233726.4261923 [pinky_battery_publiser-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 827, in spin_once
+1741233726.4262810 [pinky_battery_publiser-5]     self._spin_once_impl(timeout_sec)
+1741233726.4263589 [pinky_battery_publiser-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 811, in _spin_once_impl
+1741233726.4273295 [icm20948_node-3] Traceback (most recent call last):
+1741233726.4275308 [icm20948_node-3]   File "/home/pinky/pinky_violet/install/ros2_icm20948/lib/ros2_icm20948/icm20948_node", line 33, in <module>
+1741233726.4278743 [icm20948_node-3]     sys.exit(load_entry_point('ros2-icm20948==0.0.1', 'console_scripts', 'icm20948_node')())
+1741233726.4290321 [icm20948_node-3]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1741233726.4292598 [icm20948_node-3]   File "/home/pinky/pinky_violet/install/ros2_icm20948/lib/python3.12/site-packages/ros2_icm20948/icm20948_node.py", line 78, in main
+1741233726.4293914 [icm20948_node-3]     rclpy.spin(icm20948_node)
+1741233726.4294987 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 244, in spin
+1741233726.4296196 [icm20948_node-3]     executor.spin_once()
+1741233726.4297202 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 827, in spin_once
+1741233726.4298837 [icm20948_node-3]     self._spin_once_impl(timeout_sec)
+1741233726.4299912 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 811, in _spin_once_impl
+1741233726.4300714 [icm20948_node-3]     handler, entity, node = self.wait_for_ready_callbacks(
+1741233726.4301476 [icm20948_node-3]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1741233726.4302099 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 781, in wait_for_ready_callbacks
+1741233726.4302998 [icm20948_node-3]     return next(self._cb_iter)
+1741233726.4303939 [icm20948_node-3]            ^^^^^^^^^^^^^^^^^^^
+1741233726.4304855 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+1741233726.4305859 [icm20948_node-3]     wait_set.wait(timeout_nsec)
+1741233726.4306974 [icm20948_node-3] KeyboardInterrupt
+1741233726.4336782 [pinky_bringup-4] Traceback (most recent call last):
+1741233726.4340456 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_bringup", line 33, in <module>
+1741233726.4341803 [pinky_bringup-4]     sys.exit(load_entry_point('pinky-bringup==0.0.0', 'console_scripts', 'pinky_bringup')())
+1741233726.4342766 [pinky_bringup-4]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1741233726.4343667 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinky_bringup.py", line 86, in main
+1741233726.4344809 [pinky_bringup-4]     rclpy.shutdown()
+1741233726.4345748 [pinky_bringup-4]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 134, in shutdown
+1741233726.4347200 [pinky_bringup-4]     _shutdown(context=context)
+1741233726.4349349 [pinky_bringup-4]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/utilities.py", line 82, in shutdown
+1741233726.4350662 [pinky_bringup-4]     context.shutdown()
+1741233726.4351552 [pinky_bringup-4]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/context.py", line 129, in shutdown
+1741233726.4352250 [pinky_bringup-4]     self.__context.shutdown()
+1741233726.4353015 [pinky_bringup-4] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:333
+1741233726.4353704 [pinky_bringup-4] Error in sys.excepthook:
+1741233726.4354458 [pinky_bringup-4] Traceback (most recent call last):
+1741233726.4355288 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+1741233726.4356091 [pinky_bringup-4]     return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+1741233726.4356942 [pinky_bringup-4]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1741233726.4357693 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 66, in apport_excepthook
+1741233726.4360547 [pinky_bringup-4]     import apport.report
+1741233726.4361982 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 7, in <module>
+1741233726.4363151 [pinky_bringup-4]     from apport.packaging_impl import impl as packaging
+1741233726.4364438 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/apport/packaging_impl/__init__.py", line 33, in <module>
+1741233726.4365525 [pinky_bringup-4]     impl = load_packaging_implementation()
+1741233726.4366367 [pinky_bringup-4]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1741233726.4367180 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/apport/packaging_impl/__init__.py", line 27, in load_packaging_implementation
+1741233726.4368010 [pinky_bringup-4]     module = importlib.import_module(
+1741233726.4369607 [pinky_bringup-4]              ^^^^^^^^^^^^^^^^^^^^^^^^
+1741233726.4370708 [pinky_bringup-4]   File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+1741233726.4371805 [pinky_bringup-4]     return _bootstrap._gcd_import(name[level:], package, level)
+1741233726.4372873 [pinky_bringup-4]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1741233726.4374166 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/apport/packaging_impl/apt_dpkg.py", line 31, in <module>
+1741233726.4375081 [pinky_bringup-4]     import http.client
+1741233726.4375782 [pinky_bringup-4]   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+1741233726.4376526 [pinky_bringup-4]   File "<frozen importlib._bootstrap>", line 1322, in _find_and_load_unlocked
+1741233726.4377177 [pinky_bringup-4]   File "<frozen importlib._bootstrap>", line 1262, in _find_spec
+1741233726.4378452 [pinky_bringup-4]   File "<frozen importlib._bootstrap_external>", line 1528, in find_spec
+1741233726.4379802 [pinky_bringup-4]   File "<frozen importlib._bootstrap_external>", line 1502, in _get_spec
+1741233726.4380767 [pinky_bringup-4]   File "<frozen importlib._bootstrap_external>", line 1632, in find_spec
+1741233726.4381609 [pinky_bringup-4]   File "<frozen importlib._bootstrap>", line 491, in _verbose_message
+1741233726.4382334 [pinky_bringup-4] KeyboardInterrupt
+1741233726.4383128 [pinky_bringup-4] 
+1741233726.4383874 [pinky_bringup-4] Original exception was:
+1741233726.4384711 [pinky_bringup-4] Traceback (most recent call last):
+1741233726.4385576 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_bringup", line 33, in <module>
+1741233726.4386477 [pinky_bringup-4]     sys.exit(load_entry_point('pinky-bringup==0.0.0', 'console_scripts', 'pinky_bringup')())
+1741233726.4387317 [pinky_bringup-4]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1741233726.4388175 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinky_bringup.py", line 86, in main
+1741233726.4389462 [pinky_bringup-4]     rclpy.shutdown()
+1741233726.4390330 [pinky_bringup-4]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 134, in shutdown
+1741233726.4390957 [pinky_bringup-4]     _shutdown(context=context)
+1741233726.4391849 [pinky_bringup-4]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/utilities.py", line 82, in shutdown
+1741233726.4393003 [pinky_bringup-4]     context.shutdown()
+1741233726.4393888 [pinky_bringup-4]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/context.py", line 129, in shutdown
+1741233726.4394891 [pinky_bringup-4]     self.__context.shutdown()
+1741233726.4395623 [pinky_bringup-4] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:333
+1741233726.4676197 [ERROR] [pinky_battery_publiser-5]: process has died [pid 5706, exit code -2, cmd '/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_battery_publiser --ros-args'].
+1741233726.5561450 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741233726.5843260 [ERROR] [pinky_bringup-4]: process has died [pid 5705, exit code -2, cmd '/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_bringup --ros-args --params-file /tmp/launch_params_a9cw3al_'].
+1741233726.5958092 [ERROR] [sllidar_node-2]: process has died [pid 5703, exit code -2, cmd '/home/pinky/pinky_violet/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node --ros-args -r __node:=sllidar_node --params-file /tmp/launch_params_1o8oyfzs'].
+1741233726.7536025 [INFO] [robot_state_publisher-1]: process has finished cleanly [pid 5702]
+1741233726.7732878 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741233728.5092547 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741233728.6709957 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741233728.8808160 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741233729.0810823 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741233731.2983818 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741233731.3648551 [ERROR] [icm20948_node-3]: process[icm20948_node-3] failed to terminate '5' seconds after receiving 'SIGINT', escalating to 'SIGTERM'
+1741233731.4705589 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741233733.2852790 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741233733.4261930 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741233733.5602498 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741233733.7052820 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741233736.3674836 [ERROR] [icm20948_node-3]: process[icm20948_node-3] failed to terminate '10.0' seconds after receiving 'SIGTERM', escalating to 'SIGKILL'
+1741234209.1059816 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741234209.2640376 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741234209.4037952 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741234209.5146487 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741234209.6568456 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741234209.8137748 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...

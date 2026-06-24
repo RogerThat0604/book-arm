@@ -1,0 +1,73 @@
+1738643710.3889003 [INFO] [launch]: All log files can be found below /home/pinky/.ros/log/2025-02-04-13-35-10-376445-raspi-4298
+1738643710.3891320 [INFO] [launch]: Default logging verbosity is set to INFO
+1738643711.7607510 [INFO] [robot_state_publisher-1]: process started with pid [4302]
+1738643711.7623980 [INFO] [sllidar_node-2]: process started with pid [4303]
+1738643711.7627180 [INFO] [icm20948_node-3]: process started with pid [4304]
+1738643711.7629719 [INFO] [pinky_bringup-4]: process started with pid [4305]
+1738643712.5844843 [pinky_bringup-4] [INFO] [1738643712.584181398] [pinky_bringup]: pinky is ready!!
+1738643712.9230735 [icm20948_node-3] Traceback (most recent call last):
+1738643712.9232657 [icm20948_node-3]   File "/home/pinky/pinky_violet/install/ros2_icm20948/lib/ros2_icm20948/icm20948_node", line 33, in <module>
+1738643712.9235628 [icm20948_node-3]     sys.exit(load_entry_point('ros2-icm20948==0.0.1', 'console_scripts', 'icm20948_node')())
+1738643712.9236443 [icm20948_node-3]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1738643712.9237041 [icm20948_node-3]   File "/home/pinky/pinky_violet/install/ros2_icm20948/lib/python3.12/site-packages/ros2_icm20948/icm20948_node.py", line 78, in main
+1738643712.9237578 [icm20948_node-3]     rclpy.spin(icm20948_node)
+1738643712.9238365 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 244, in spin
+1738643712.9238873 [icm20948_node-3]     executor.spin_once()
+1738643712.9239328 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 827, in spin_once
+1738643712.9241226 [icm20948_node-3]     self._spin_once_impl(timeout_sec)
+1738643712.9241862 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 822, in _spin_once_impl
+1738643712.9243550 [icm20948_node-3]     raise handler.exception()
+1738643712.9244173 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/task.py", line 239, in __call__
+1738643712.9244609 [icm20948_node-3]     self._handler.send(None)
+1738643712.9245012 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 508, in handler
+1738643712.9245412 [icm20948_node-3]     await call_coroutine()
+1738643712.9245837 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 372, in _execute
+1738643712.9246240 [icm20948_node-3]     await await_or_execute(tmr.callback)
+1738643712.9247487 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 111, in await_or_execute
+1738643712.9248185 [icm20948_node-3]     return callback(*args)
+1738643712.9248650 [icm20948_node-3]            ^^^^^^^^^^^^^^^
+1738643712.9249079 [icm20948_node-3]   File "/home/pinky/pinky_violet/install/ros2_icm20948/lib/python3.12/site-packages/ros2_icm20948/icm20948_node.py", line 49, in publish_cback
+1738643712.9249482 [icm20948_node-3]     if self.imu.dataReady():
+1738643712.9249868 [icm20948_node-3]        ^^^^^^^^^^^^^^^^^^^^
+1738643712.9250255 [icm20948_node-3]   File "/home/pinky/.local/lib/python3.12/site-packages/qwiic_icm20948.py", line 651, in dataReady
+1738643712.9270689 [icm20948_node-3]     self.setBank(0)
+1738643712.9272923 [icm20948_node-3]   File "/home/pinky/.local/lib/python3.12/site-packages/qwiic_icm20948.py", line 364, in setBank
+1738643712.9274552 [icm20948_node-3]     return self._i2c.writeByte(self.address, self.REG_BANK_SEL, bank)
+1738643712.9275870 [icm20948_node-3]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1738643712.9276490 [icm20948_node-3]   File "/home/pinky/.local/lib/python3.12/site-packages/qwiic_i2c/linux_i2c.py", line 241, in writeByte
+1738643712.9278276 [icm20948_node-3]     return self._i2cbus.write_byte_data(address, commandCode, value)
+1738643712.9279897 [icm20948_node-3]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1738643712.9280469 [icm20948_node-3]   File "/home/pinky/.local/lib/python3.12/site-packages/smbus2/smbus2.py", line 457, in write_byte_data
+1738643712.9283929 [icm20948_node-3]     ioctl(self.fd, I2C_SMBUS, msg)
+1738643712.9285934 [icm20948_node-3] OSError: [Errno 121] Remote I/O error
+1738643713.1630075 [ERROR] [icm20948_node-3]: process has died [pid 4304, exit code 1, cmd '/home/pinky/pinky_violet/install/ros2_icm20948/lib/ros2_icm20948/icm20948_node --ros-args -r __node:=icm20948_node --params-file /tmp/launch_params_ch7fsyu7 --params-file /tmp/launch_params_n1806y0r --params-file /tmp/launch_params_epfmtkdh'].
+1738643714.9263477 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1738643715.0438178 [INFO] [robot_state_publisher-1]: process has finished cleanly [pid 4302]
+1738643715.0854566 [pinky_bringup-4] Traceback (most recent call last):
+1738643715.0856409 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_bringup", line 33, in <module>
+1738643715.0859580 [pinky_bringup-4]     sys.exit(load_entry_point('pinky-bringup==0.0.0', 'console_scripts', 'pinky_bringup')())
+1738643715.0860791 [pinky_bringup-4]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1738643715.0861435 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinky_bringup.py", line 99, in main
+1738643715.0861943 [pinky_bringup-4]     rclpy.shutdown()
+1738643715.0862429 [pinky_bringup-4]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 134, in shutdown
+1738643715.0862899 [pinky_bringup-4]     _shutdown(context=context)
+1738643715.0863321 [pinky_bringup-4]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/utilities.py", line 82, in shutdown
+1738643715.0863738 [pinky_bringup-4]     context.shutdown()
+1738643715.0864167 [pinky_bringup-4]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/context.py", line 129, in shutdown
+1738643715.0864580 [pinky_bringup-4]     self.__context.shutdown()
+1738643715.0866899 [pinky_bringup-4] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:333
+1738643715.1424158 [pinky_bringup-4] Exception ignored in: <function PWM.__del__ at 0xffffb034d6c0>
+1738643715.1426113 [pinky_bringup-4] Traceback (most recent call last):
+1738643715.1426849 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py", line 178, in __del__
+1738643715.1429844 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py", line 201, in stop
+1738643715.1430869 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/lgpio.py", line 1084, in tx_pwm
+1738643715.1431465 [pinky_bringup-4] TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+1738643715.1431913 [pinky_bringup-4] Exception ignored in: <function PWM.__del__ at 0xffffb034d6c0>
+1738643715.1432333 [pinky_bringup-4] Traceback (most recent call last):
+1738643715.1433926 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py", line 178, in __del__
+1738643715.1434543 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py", line 201, in stop
+1738643715.1435008 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/lgpio.py", line 1084, in tx_pwm
+1738643715.1435440 [pinky_bringup-4] TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+1738643715.1465976 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1738643715.1500585 [ERROR] [sllidar_node-2]: process has died [pid 4303, exit code -2, cmd '/home/pinky/pinky_violet/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node --ros-args -r __node:=sllidar_node --params-file /tmp/launch_params_xdpxd77f'].
+1738643715.1550069 [ERROR] [pinky_bringup-4]: process has died [pid 4305, exit code -2, cmd '/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_bringup --ros-args --params-file /tmp/launch_params_foj50z4v'].

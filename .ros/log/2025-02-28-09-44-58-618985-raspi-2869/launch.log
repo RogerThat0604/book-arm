@@ -1,0 +1,74 @@
+1740703498.6204386 [INFO] [launch]: All log files can be found below /home/pinky/.ros/log/2025-02-28-09-44-58-618985-raspi-2869
+1740703498.6206570 [INFO] [launch]: Default logging verbosity is set to INFO
+1740703499.0238099 [INFO] [robot_state_publisher-1]: process started with pid [2873]
+1740703499.0243831 [INFO] [sllidar_node-2]: process started with pid [2874]
+1740703499.0245643 [INFO] [icm20948_node-3]: process started with pid [2875]
+1740703499.0247169 [INFO] [pinky_bringup-4]: process started with pid [2876]
+1740703499.0248709 [INFO] [pinky_battery_publiser-5]: process started with pid [2877]
+1740703499.9959519 [pinky_bringup-4] Traceback (most recent call last):
+1740703499.9964359 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinkylib.py", line 32, in __init__
+1740703499.9969349 [pinky_bringup-4]     GPIO.setup(TRIG, GPIO.OUT)
+1740703499.9971883 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py", line 677, in setup
+1740703499.9974067 [pinky_bringup-4]     initial = _check(lgpio.gpio_read(_chip, gpio))
+1740703499.9976001 [pinky_bringup-4]                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703499.9977810 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/lgpio.py", line 903, in gpio_read
+1740703499.9979827 [pinky_bringup-4]     return _u2i(_lgpio._gpio_read(handle&0xffff, gpio))
+1740703499.9982374 [pinky_bringup-4]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703499.9984059 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/lgpio.py", line 458, in _u2i
+1740703499.9989779 [pinky_bringup-4]     raise error(error_text(v))
+1740703499.9992752 [pinky_bringup-4] lgpio.error: 'GPIO not allocated'
+1740703499.9994388 [pinky_bringup-4] 
+1740703499.9996166 [pinky_bringup-4] During handling of the above exception, another exception occurred:
+1740703499.9998126 [pinky_bringup-4] 
+1740703499.9999847 [pinky_bringup-4] Traceback (most recent call last):
+1740703500.0002251 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_bringup", line 33, in <module>
+1740703500.0008326 [pinky_bringup-4]     sys.exit(load_entry_point('pinky-bringup==0.0.0', 'console_scripts', 'pinky_bringup')())
+1740703500.0011213 [pinky_bringup-4]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703500.0013027 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinky_bringup.py", line 75, in main
+1740703500.0013909 [pinky_bringup-4]     pinky_bringup_node = PinkyBringup()
+1740703500.0015590 [pinky_bringup-4]                          ^^^^^^^^^^^^^^
+1740703500.0016482 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinky_bringup.py", line 14, in __init__
+1740703500.0018120 [pinky_bringup-4]     self.pinky = Pinky()
+1740703500.0019269 [pinky_bringup-4]                  ^^^^^^^
+1740703500.0021303 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinkylib.py", line 53, in __init__
+1740703500.0023315 [pinky_bringup-4]     raise RuntimeError("현재 GPIO가 사용중 입니다. 사용 중인 커널을 종료 후 다시 실행해 주세요")
+1740703500.0024333 [pinky_bringup-4] RuntimeError: 현재 GPIO가 사용중 입니다. 사용 중인 커널을 종료 후 다시 실행해 주세요
+1740703500.2748816 [ERROR] [pinky_bringup-4]: process has died [pid 2876, exit code 1, cmd '/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_bringup --ros-args --params-file /tmp/launch_params_qbii_kxk'].
+1740703521.7459662 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1740703521.7541621 [icm20948_node-3] Traceback (most recent call last):
+1740703521.7545364 [icm20948_node-3]   File "/home/pinky/pinky_violet/install/ros2_icm20948/lib/ros2_icm20948/icm20948_node", line 33, in <module>
+1740703521.7547166 [icm20948_node-3]     sys.exit(load_entry_point('ros2-icm20948==0.0.1', 'console_scripts', 'icm20948_node')())
+1740703521.7548876 [icm20948_node-3]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703521.7550449 [icm20948_node-3]   File "/home/pinky/pinky_violet/install/ros2_icm20948/lib/python3.12/site-packages/ros2_icm20948/icm20948_node.py", line 78, in main
+1740703521.7555087 [icm20948_node-3]     rclpy.spin(icm20948_node)
+1740703521.7556627 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 244, in spin
+1740703521.7558458 [icm20948_node-3]     executor.spin_once()
+1740703521.7561717 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 827, in spin_once
+1740703521.7565207 [icm20948_node-3]     self._spin_once_impl(timeout_sec)
+1740703521.7568295 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 811, in _spin_once_impl
+1740703521.7571905 [icm20948_node-3]     handler, entity, node = self.wait_for_ready_callbacks(
+1740703521.7579143 [icm20948_node-3]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703521.7582662 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 781, in wait_for_ready_callbacks
+1740703521.7586741 [icm20948_node-3]     return next(self._cb_iter)
+1740703521.7590489 [icm20948_node-3]            ^^^^^^^^^^^^^^^^^^^
+1740703521.7596624 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+1740703521.7599726 [icm20948_node-3]     wait_set.wait(timeout_nsec)
+1740703521.7604101 [icm20948_node-3] KeyboardInterrupt
+1740703521.8554728 [pinky_battery_publiser-5] Traceback (most recent call last):
+1740703521.8557115 [pinky_battery_publiser-5]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_battery_publiser", line 33, in <module>
+1740703521.8562999 [pinky_battery_publiser-5]     sys.exit(load_entry_point('pinky-bringup==0.0.0', 'console_scripts', 'pinky_battery_publiser')())
+1740703521.8564849 [pinky_battery_publiser-5]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703521.8565707 [pinky_battery_publiser-5]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinky_battery_publiser.py", line 38, in main
+1740703521.8566303 [pinky_battery_publiser-5]     rclpy.shutdown()
+1740703521.8566823 [pinky_battery_publiser-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 134, in shutdown
+1740703521.8567307 [pinky_battery_publiser-5]     _shutdown(context=context)
+1740703521.8567829 [pinky_battery_publiser-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/utilities.py", line 82, in shutdown
+1740703521.8568385 [pinky_battery_publiser-5]     context.shutdown()
+1740703521.8568814 [pinky_battery_publiser-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/context.py", line 129, in shutdown
+1740703521.8569233 [pinky_battery_publiser-5]     self.__context.shutdown()
+1740703521.8569639 [pinky_battery_publiser-5] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:333
+1740703521.8821604 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1740703521.8848035 [ERROR] [robot_state_publisher-1]: process has died [pid 2873, exit code -2, cmd '/opt/ros/jazzy/lib/robot_state_publisher/robot_state_publisher --ros-args -r __node:=robot_state_publisher --params-file /tmp/launch_params_slbqh999 --params-file /tmp/launch_params_9godgiwm'].
+1740703521.8855879 [ERROR] [sllidar_node-2]: process has died [pid 2874, exit code -2, cmd '/home/pinky/pinky_violet/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node --ros-args -r __node:=sllidar_node --params-file /tmp/launch_params_yg318au0'].
+1740703521.8883181 [ERROR] [icm20948_node-3]: process has died [pid 2875, exit code -2, cmd '/home/pinky/pinky_violet/install/ros2_icm20948/lib/ros2_icm20948/icm20948_node --ros-args -r __node:=icm20948_node --params-file /tmp/launch_params__g3z3vzb --params-file /tmp/launch_params_339dw_yu --params-file /tmp/launch_params_3e7945yf'].
+1740703521.8893998 [ERROR] [pinky_battery_publiser-5]: process has died [pid 2877, exit code -2, cmd '/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_battery_publiser --ros-args'].

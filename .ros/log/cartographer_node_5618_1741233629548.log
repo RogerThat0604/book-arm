@@ -1,0 +1,112 @@
+[INFO] [1741233629.754090501] [cartographer logger]: I20250306 13:00:29.-2147483648  5618 configuration_file_resolver.cc:41] Found '/home/pinky/pinky_violet/install/pinky_cartographer/share/pinky_cartographer/params/initial_pose.lua' for 'initial_pose.lua'.
+[INFO] [1741233629.754485945] [cartographer logger]: I20250306 13:00:29.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[INFO] [1741233629.754533260] [cartographer logger]: I20250306 13:00:29.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[INFO] [1741233629.754604815] [cartographer logger]: I20250306 13:00:29.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[INFO] [1741233629.754639908] [cartographer logger]: I20250306 13:00:29.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[INFO] [1741233629.754846538] [cartographer logger]: I20250306 13:00:29.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[INFO] [1741233629.754894630] [cartographer logger]: I20250306 13:00:29.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[INFO] [1741233629.754962852] [cartographer logger]: I20250306 13:00:29.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[INFO] [1741233629.754998389] [cartographer logger]: I20250306 13:00:29.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[INFO] [1741233629.755163056] [cartographer logger]: I20250306 13:00:29.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[INFO] [1741233629.755202130] [cartographer logger]: I20250306 13:00:29.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[INFO] [1741233629.888736056] [cartographer logger]: I20250306 13:00:29.-2147483648  5618 map_builder_bridge.cpp:136] Added trajectory with ID '0'.
+[INFO] [1741233635.131413627] [cartographer logger]: I20250306 13:00:35.-2147483648  5618 ordered_multi_queue.cc:172] All sensor data for trajectory 0 is available starting at '638768304351306007'.
+[INFO] [1741233635.224344645] [cartographer logger]: I20250306 13:00:35.-2147483648  5618 local_trajectory_builder_2d.cc:124] Extrapolator not yet initialized.
+[INFO] [1741233635.330740108] [cartographer logger]: I20250306 13:00:35.-2147483648  5618 local_trajectory_builder_2d.cc:135] Extrapolator is still initializing.
+[INFO] [1741233635.332851682] [cartographer logger]: I20250306 13:00:35.-2147483648  5618 pose_graph_2d.cc:148] Inserted submap (0, 0).
+[INFO] [1741233644.931785399] [cartographer logger]: I20250306 13:00:44.-2147483648  5618 collated_trajectory_builder.cc:81] imu rate: 5.00 Hz 2.00e-01 s +/- 1.53e-03 s (pulsed at 100.03% real time)
+[INFO] [1741233644.931864566] [cartographer logger]: I20250306 13:00:44.-2147483648  5618 collated_trajectory_builder.cc:81] scan rate: 10.01 Hz 9.99e-02 s +/- 1.06e-03 s (pulsed at 99.82% real time)
+[INFO] [1741233659.933211075] [cartographer logger]: I20250306 13:00:59.-2147483648  5618 collated_trajectory_builder.cc:81] imu rate: 5.00 Hz 2.00e-01 s +/- 1.49e-03 s (pulsed at 100.11% real time)
+[INFO] [1741233659.933425594] [cartographer logger]: I20250306 13:00:59.-2147483648  5618 collated_trajectory_builder.cc:81] scan rate: 10.01 Hz 9.99e-02 s +/- 9.79e-04 s (pulsed at 99.93% real time)
+[INFO] [1741233674.939234677] [cartographer logger]: I20250306 13:01:14.-2147483648  5618 collated_trajectory_builder.cc:81] imu rate: 5.00 Hz 2.00e-01 s +/- 4.08e-03 s (pulsed at 100.08% real time)
+[INFO] [1741233674.939317603] [cartographer logger]: I20250306 13:01:14.-2147483648  5618 collated_trajectory_builder.cc:81] scan rate: 10.01 Hz 9.99e-02 s +/- 2.31e-03 s (pulsed at 99.89% real time)
+[INFO] [1741233685.359975356] [cartographer logger]: I20250306 13:01:25.-2147483648  5618 motion_filter.cc:42] Motion filter reduced the number of nodes to 7.2%.
+[INFO] [1741233687.713421670] [cartographer logger]: I20250306 13:01:27.-2147483648  5618 node.cpp:569] Shutdown the subscriber of [scan]
+[INFO] [1741233687.713545170] [cartographer logger]: I20250306 13:01:27.-2147483648  5618 node.cpp:569] Shutdown the subscriber of [imu]
+[INFO] [1741233687.713588670] [cartographer logger]: I20250306 13:01:27.-2147483648  5618 map_builder_bridge.cpp:152] Finishing trajectory with ID '0'...
+[INFO] [1741233687.755586762] [cartographer logger]: I20250306 13:01:27.-2147483648  5651 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[INFO] [1741233687.760729003] [cartographer logger]: I20250306 13:01:27.-2147483648  5651 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[INFO] [1741233687.760799244] [cartographer logger]: I20250306 13:01:27.-2147483648  5651 constraint_builder_2d.cc:292] Score histogram:
+Count: 0
+[WARN] [1741233687.768224799] [cartographer logger]: W20250306 13:01:27.-2147483648  5651 preprocessor.cc:67] Specified options.num_threads: 7 exceeds maximum available from the threading model Ceres was compiled with: 4.  Bounding to maximum number available.
+[INFO] [1741233687.770236429] [cartographer logger]: I20250306 13:01:27.-2147483648  5618 configuration_file_resolver.cc:41] Found '/home/pinky/pinky_violet/install/pinky_cartographer/share/pinky_cartographer/params/nav2_cartographer_params.lua' for 'nav2_cartographer_params.lua'.
+[INFO] [1741233687.770725818] [cartographer logger]: I20250306 13:01:27.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[INFO] [1741233687.770785447] [cartographer logger]: I20250306 13:01:27.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[INFO] [1741233687.770885577] [cartographer logger]: I20250306 13:01:27.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[INFO] [1741233687.770930614] [cartographer logger]: I20250306 13:01:27.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[INFO] [1741233687.771100873] [cartographer logger]: I20250306 13:01:27.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[INFO] [1741233687.771148596] [cartographer logger]: I20250306 13:01:27.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[INFO] [1741233687.771220985] [cartographer logger]: I20250306 13:01:27.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[INFO] [1741233687.771255892] [cartographer logger]: I20250306 13:01:27.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[INFO] [1741233687.771444651] [cartographer logger]: I20250306 13:01:27.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[INFO] [1741233687.771493762] [cartographer logger]: I20250306 13:01:27.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[INFO] [1741233687.792492318] [cartographer logger]: I20250306 13:01:27.-2147483648  5618 map_builder_bridge.cpp:136] Added trajectory with ID '1'.
+[INFO] [1741233687.885319059] [cartographer logger]: I20250306 13:01:27.-2147483648  5618 ordered_multi_queue.cc:172] All sensor data for trajectory 1 is available starting at '638768304878828470'.
+[INFO] [1741233688.033623707] [cartographer logger]: I20250306 13:01:28.-2147483648  5618 local_trajectory_builder_2d.cc:135] Extrapolator is still initializing.
+[INFO] [1741233688.049483633] [cartographer logger]: I20250306 13:01:28.-2147483648  5618 pose_graph_2d.cc:148] Inserted submap (1, 0).
+[INFO] [1741233698.244003293] [cartographer logger]: I20250306 13:01:38.-2147483648  5618 pose_graph_2d.cc:148] Inserted submap (1, 1).
+[INFO] [1741233699.424007755] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 node.cpp:569] Shutdown the subscriber of [scan]
+[INFO] [1741233699.424117866] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 node.cpp:569] Shutdown the subscriber of [imu]
+[INFO] [1741233699.424160904] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 map_builder_bridge.cpp:152] Finishing trajectory with ID '1'...
+[INFO] [1741233699.440809163] [cartographer logger]: I20250306 13:01:39.-2147483648  5651 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[INFO] [1741233699.442533718] [cartographer logger]: I20250306 13:01:39.-2147483648  5651 constraint_builder_2d.cc:290] 0 computations resulted in 0 additional constraints.
+[INFO] [1741233699.442585441] [cartographer logger]: I20250306 13:01:39.-2147483648  5651 constraint_builder_2d.cc:292] Score histogram:
+Count: 0
+[WARN] [1741233699.445168144] [cartographer logger]: W20250306 13:01:39.-2147483648  5651 preprocessor.cc:67] Specified options.num_threads: 7 exceeds maximum available from the threading model Ceres was compiled with: 4.  Bounding to maximum number available.
+[INFO] [1741233699.459374792] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 configuration_file_resolver.cc:41] Found '/home/pinky/pinky_violet/install/pinky_cartographer/share/pinky_cartographer/params/nav2_cartographer_params.lua' for 'nav2_cartographer_params.lua'.
+[INFO] [1741233699.459854366] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[INFO] [1741233699.459929589] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[INFO] [1741233699.460107515] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[INFO] [1741233699.460181089] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[INFO] [1741233699.460401237] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[INFO] [1741233699.460448589] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[INFO] [1741233699.460528385] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[INFO] [1741233699.460571441] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[INFO] [1741233699.460750089] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[INFO] [1741233699.460793015] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[INFO] [1741233699.465232718] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 map_builder_bridge.cpp:136] Added trajectory with ID '2'.
+[INFO] [1741233699.531328237] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 ordered_multi_queue.cc:172] All sensor data for trajectory 2 is available starting at '638768304995300885'.
+[INFO] [1741233699.580633996] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 local_trajectory_builder_2d.cc:124] Extrapolator not yet initialized.
+[INFO] [1741233699.739026385] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 local_trajectory_builder_2d.cc:135] Extrapolator is still initializing.
+[INFO] [1741233699.746153626] [cartographer logger]: I20250306 13:01:39.-2147483648  5618 pose_graph_2d.cc:148] Inserted submap (2, 0).
+[INFO] [1741233709.238442546] [cartographer logger]: I20250306 13:01:49.-2147483648  5618 pose_graph_2d.cc:148] Inserted submap (2, 1).
+[INFO] [1741233714.551299024] [cartographer logger]: I20250306 13:01:54.-2147483648  5618 collated_trajectory_builder.cc:81] imu rate: 5.00 Hz 2.00e-01 s +/- 2.64e-03 s (pulsed at 100.09% real time)
+[INFO] [1741233714.553262913] [cartographer logger]: I20250306 13:01:54.-2147483648  5618 collated_trajectory_builder.cc:81] scan rate: 10.01 Hz 9.99e-02 s +/- 1.65e-03 s (pulsed at 99.47% real time)
+[INFO] [1741233718.758270762] [cartographer logger]: I20250306 13:01:58.-2147483648  5618 pose_graph_2d.cc:148] Inserted submap (2, 2).
+[INFO] [1741233718.781341022] [cartographer logger]: I20250306 13:01:58.-2147483648  5651 constraint_builder_2d.cc:275] Node (2, 180) with 200 points on submap (2, 0) differs by translation 0.00 rotation 0.004 with score 89.1%.
+[INFO] [1741233719.142458984] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 node.cpp:569] Shutdown the subscriber of [scan]
+[INFO] [1741233719.142533577] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 node.cpp:569] Shutdown the subscriber of [imu]
+[INFO] [1741233719.142679392] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 map_builder_bridge.cpp:152] Finishing trajectory with ID '2'...
+[INFO] [1741233719.143042540] [cartographer logger]: I20250306 13:01:59.-2147483648  5653 pose_graph_2d.cc:538] Remaining work items in queue: 0
+[INFO] [1741233719.152565836] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 configuration_file_resolver.cc:41] Found '/home/pinky/pinky_violet/install/pinky_cartographer/share/pinky_cartographer/params/nav2_cartographer_params.lua' for 'nav2_cartographer_params.lua'.
+[INFO] [1741233719.153014299] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[INFO] [1741233719.153083707] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/map_builder.lua' for 'map_builder.lua'.
+[INFO] [1741233719.153178170] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[INFO] [1741233719.153228058] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/pose_graph.lua' for 'pose_graph.lua'.
+[INFO] [1741233719.153432781] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[INFO] [1741233719.153491151] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder.lua' for 'trajectory_builder.lua'.
+[INFO] [1741233719.153594429] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[INFO] [1741233719.153642373] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_2d.lua' for 'trajectory_builder_2d.lua'.
+[INFO] [1741233719.154076207] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[INFO] [1741233719.154129707] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 configuration_file_resolver.cc:41] Found '/opt/ros/jazzy/share/cartographer/configuration_files/trajectory_builder_3d.lua' for 'trajectory_builder_3d.lua'.
+[INFO] [1741233719.154576410] [cartographer logger]: I20250306 13:01:59.-2147483648  5651 constraint_builder_2d.cc:275] Node (2, 183) with 198 points on submap (2, 0) differs by translation 0.01 rotation 0.012 with score 88.2%.
+[INFO] [1741233719.155696225] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 map_builder_bridge.cpp:136] Added trajectory with ID '3'.
+[INFO] [1741233719.159322466] [cartographer logger]: I20250306 13:01:59.-2147483648  5654 constraint_builder_2d.cc:290] 3 computations resulted in 2 additional constraints.
+[INFO] [1741233719.159564503] [cartographer logger]: I20250306 13:01:59.-2147483648  5654 constraint_builder_2d.cc:292] Score histogram:
+Count: 2  Min: 0.88219  Max: 0.891325  Mean: 0.886758
+[0.882190, 0.883104)	          ##########	Count: 1 (50%)	Total: 1 (50%)
+[0.883104, 0.884017)	                    	Count: 0 (0%)	Total: 1 (50%)
+[0.884017, 0.884931)	                    	Count: 0 (0%)	Total: 1 (50%)
+[0.884931, 0.885844)	                    	Count: 0 (0%)	Total: 1 (50%)
+[0.885844, 0.886758)	                    	Count: 0 (0%)	Total: 1 (50%)
+[0.886758, 0.887671)	                    	Count: 0 (0%)	Total: 1 (50%)
+[0.887671, 0.888585)	                    	Count: 0 (0%)	Total: 1 (50%)
+[0.888585, 0.889498)	                    	Count: 0 (0%)	Total: 1 (50%)
+[0.889498, 0.890412)	                    	Count: 0 (0%)	Total: 1 (50%)
+[0.890412, 0.891325]	          ##########	Count: 1 (50%)	Total: 2 (100%)
+[WARN] [1741233719.168198799] [cartographer logger]: W20250306 13:01:59.-2147483648  5654 preprocessor.cc:67] Specified options.num_threads: 7 exceeds maximum available from the threading model Ceres was compiled with: 4.  Bounding to maximum number available.
+[INFO] [1741233719.235308244] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 ordered_multi_queue.cc:172] All sensor data for trajectory 3 is available starting at '638768305192319199'.
+[INFO] [1741233719.261615577] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 local_trajectory_builder_2d.cc:124] Extrapolator not yet initialized.
+[INFO] [1741233719.441699188] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 local_trajectory_builder_2d.cc:135] Extrapolator is still initializing.
+[INFO] [1741233719.443153743] [cartographer logger]: I20250306 13:01:59.-2147483648  5618 pose_graph_2d.cc:148] Inserted submap (3, 0).
+[INFO] [1741233727.025643276] [rclcpp]: signal_handler(signum=2)

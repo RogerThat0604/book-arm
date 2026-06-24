@@ -1,0 +1,71 @@
+1740703633.9223518 [INFO] [launch]: All log files can be found below /home/pinky/.ros/log/2025-02-28-09-47-13-920962-raspi-3966
+1740703633.9225750 [INFO] [launch]: Default logging verbosity is set to INFO
+1740703634.3259547 [INFO] [robot_state_publisher-1]: process started with pid [3970]
+1740703634.3264277 [INFO] [sllidar_node-2]: process started with pid [3971]
+1740703634.3266845 [INFO] [icm20948_node-3]: process started with pid [3972]
+1740703634.3268924 [INFO] [pinky_bringup-4]: process started with pid [3973]
+1740703634.3270199 [INFO] [pinky_battery_publiser-5]: process started with pid [3974]
+1740703635.1604090 [pinky_bringup-4] Traceback (most recent call last):
+1740703635.1606770 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_bringup", line 33, in <module>
+1740703635.1611698 [pinky_bringup-4]     sys.exit(load_entry_point('pinky-bringup==0.0.0', 'console_scripts', 'pinky_bringup')())
+1740703635.1613111 [pinky_bringup-4]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703635.1613913 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_bringup", line 25, in importlib_load_entry_point
+1740703635.1614547 [pinky_bringup-4]     return next(matches).load()
+1740703635.1615322 [pinky_bringup-4]            ^^^^^^^^^^^^^^^^^^^^
+1740703635.1616066 [pinky_bringup-4]   File "/usr/lib/python3.12/importlib/metadata/__init__.py", line 205, in load
+1740703635.1638672 [pinky_bringup-4]     module = import_module(match.group('module'))
+1740703635.1643679 [pinky_bringup-4]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703635.1645076 [pinky_bringup-4]   File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+1740703635.1649771 [pinky_bringup-4]     return _bootstrap._gcd_import(name[level:], package, level)
+1740703635.1655314 [pinky_bringup-4]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703635.1656728 [pinky_bringup-4]   File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+1740703635.1660049 [pinky_bringup-4]   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+1740703635.1661937 [pinky_bringup-4]   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+1740703635.1663151 [pinky_bringup-4]   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+1740703635.1664126 [pinky_bringup-4]   File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+1740703635.1664937 [pinky_bringup-4]   File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+1740703635.1665738 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinky_bringup.py", line 5, in <module>
+1740703635.1668699 [pinky_bringup-4]     from .pinkylib import Pinky
+1740703635.1669734 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinkylib.py", line 52
+1740703635.1670578 [pinky_bringup-4]     except Exception as e:
+1740703635.1671436 [pinky_bringup-4]     ^
+1740703635.1672146 [pinky_bringup-4] IndentationError: expected an indented block after 'try' statement on line 30
+1740703635.3284450 [ERROR] [pinky_bringup-4]: process has died [pid 3973, exit code 1, cmd '/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_bringup --ros-args --params-file /tmp/launch_params_ze59nf0x'].
+1740703643.5309007 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1740703643.5400114 [icm20948_node-3] Traceback (most recent call last):
+1740703643.5406499 [icm20948_node-3]   File "/home/pinky/pinky_violet/install/ros2_icm20948/lib/ros2_icm20948/icm20948_node", line 33, in <module>
+1740703643.5411818 [icm20948_node-3]     sys.exit(load_entry_point('ros2-icm20948==0.0.1', 'console_scripts', 'icm20948_node')())
+1740703643.5416567 [icm20948_node-3]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703643.5422950 [icm20948_node-3]   File "/home/pinky/pinky_violet/install/ros2_icm20948/lib/python3.12/site-packages/ros2_icm20948/icm20948_node.py", line 78, in main
+1740703643.5426645 [icm20948_node-3]     rclpy.spin(icm20948_node)
+1740703643.5431921 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 244, in spin
+1740703643.5436478 [icm20948_node-3]     executor.spin_once()
+1740703643.5438955 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 827, in spin_once
+1740703643.5443344 [icm20948_node-3]     self._spin_once_impl(timeout_sec)
+1740703643.5445464 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 811, in _spin_once_impl
+1740703643.5447428 [icm20948_node-3]     handler, entity, node = self.wait_for_ready_callbacks(
+1740703643.5448952 [icm20948_node-3]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703643.5450470 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 781, in wait_for_ready_callbacks
+1740703643.5452335 [icm20948_node-3]     return next(self._cb_iter)
+1740703643.5453837 [icm20948_node-3]            ^^^^^^^^^^^^^^^^^^^
+1740703643.5455017 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+1740703643.5456493 [icm20948_node-3]     wait_set.wait(timeout_nsec)
+1740703643.5457928 [icm20948_node-3] KeyboardInterrupt
+1740703643.6462631 [pinky_battery_publiser-5] Traceback (most recent call last):
+1740703643.6473069 [pinky_battery_publiser-5]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_battery_publiser", line 33, in <module>
+1740703643.6497438 [pinky_battery_publiser-5]     sys.exit(load_entry_point('pinky-bringup==0.0.0', 'console_scripts', 'pinky_battery_publiser')())
+1740703643.6507363 [pinky_battery_publiser-5]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703643.6515915 [pinky_battery_publiser-5]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinky_battery_publiser.py", line 38, in main
+1740703643.6523311 [pinky_battery_publiser-5]     rclpy.shutdown()
+1740703643.6528964 [pinky_battery_publiser-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 134, in shutdown
+1740703643.6538069 [pinky_battery_publiser-5]     _shutdown(context=context)
+1740703643.6551714 [pinky_battery_publiser-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/utilities.py", line 82, in shutdown
+1740703643.6566126 [pinky_battery_publiser-5]     context.shutdown()
+1740703643.6577420 [pinky_battery_publiser-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/context.py", line 129, in shutdown
+1740703643.6581216 [pinky_battery_publiser-5]     self.__context.shutdown()
+1740703643.6583223 [pinky_battery_publiser-5] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:333
+1740703643.6788087 [INFO] [robot_state_publisher-1]: process has finished cleanly [pid 3970]
+1740703643.6933177 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1740703643.6974535 [ERROR] [sllidar_node-2]: process has died [pid 3971, exit code -2, cmd '/home/pinky/pinky_violet/install/sllidar_ros2/lib/sllidar_ros2/sllidar_node --ros-args -r __node:=sllidar_node --params-file /tmp/launch_params_sw5lw504'].
+1740703643.7017143 [ERROR] [icm20948_node-3]: process has died [pid 3972, exit code -2, cmd '/home/pinky/pinky_violet/install/ros2_icm20948/lib/ros2_icm20948/icm20948_node --ros-args -r __node:=icm20948_node --params-file /tmp/launch_params_ims3833j --params-file /tmp/launch_params_5rei4j93 --params-file /tmp/launch_params_sbl_3u1j'].
+1740703643.7031300 [ERROR] [pinky_battery_publiser-5]: process has died [pid 3974, exit code -2, cmd '/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_battery_publiser --ros-args'].

@@ -1,0 +1,454 @@
+[INFO] [1741077359.712625746] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libmap_server_core.so
+[INFO] [1741077359.754676245] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::CostmapFilterInfoServer>
+[INFO] [1741077359.755918460] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapSaver>
+[INFO] [1741077359.755943201] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[INFO] [1741077359.755956645] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_map_server::MapServer>
+[INFO] [1741077360.574596920] [map_server]: 
+	map_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1741077360.574729493] [map_server]: Creating
+[INFO] [1741077360.579323654] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libcontroller_server_core.so
+[INFO] [1741077360.623793862] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[INFO] [1741077360.623883269] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_controller::ControllerServer>
+[INFO] [1741077360.769979806] [controller_server]: 
+	controller_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1741077360.780379084] [controller_server]: Creating controller server
+[INFO] [1741077360.868905947] [local_costmap.local_costmap]: 
+	local_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1741077360.870930918] [local_costmap.local_costmap]: Creating Costmap
+[INFO] [1741077360.877843270] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libnav2_lifecycle_manager_core.so
+[INFO] [1741077360.880995697] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[INFO] [1741077360.881226085] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[INFO] [1741077360.983303394] [lifecycle_manager_localization]: Creating
+[INFO] [1741077361.004225579] [lifecycle_manager_localization]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [1741077361.006905454] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libsmoother_server_core.so
+[INFO] [1741077361.015230002] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[INFO] [1741077361.015302798] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_smoother::SmootherServer>
+[INFO] [1741077361.025511151] [lifecycle_manager_localization]: [34m[1mStarting managed nodes bringup...[0m[0m
+[INFO] [1741077361.025684187] [lifecycle_manager_localization]: [34m[1mConfiguring map_server[0m[0m
+[INFO] [1741077361.027437567] [map_server]: Configuring
+[INFO] [1741077361.027565918] [map_io]: Loading yaml file: /home/pinky/pinky_violet/install/pinky_navigation/share/pinky_navigation/map/pinklab.yaml
+[INFO] [1741077361.027993693] [map_io]: resolution: 0.05
+[INFO] [1741077361.028017860] [map_io]: origin[0]: -0.65
+[INFO] [1741077361.028024953] [map_io]: origin[1]: -10.5
+[INFO] [1741077361.028029860] [map_io]: origin[2]: 0
+[INFO] [1741077361.028034860] [map_io]: free_thresh: 0.25
+[INFO] [1741077361.028039656] [map_io]: occupied_thresh: 0.65
+[INFO] [1741077361.028046952] [map_io]: mode: trinary
+[INFO] [1741077361.028053230] [map_io]: negate: 0
+[INFO] [1741077361.028403932] [map_io]: Loading image_file: /home/pinky/pinky_violet/install/pinky_navigation/share/pinky_navigation/map/pinklab.png
+[INFO] [1741077361.069890323] [map_io]: Read map /home/pinky/pinky_violet/install/pinky_navigation/share/pinky_navigation/map/pinklab.png: 207 X 293 map @ 0.05 m/cell
+[INFO] [1741077361.166138774] [lifecycle_manager_localization]: [34m[1mActivating map_server[0m[0m
+[INFO] [1741077361.171320302] [map_server]: Activating
+[INFO] [1741077361.177721971] [map_server]: Creating bond (map_server) to lifecycle manager.
+[INFO] [1741077361.254147343] [smoother_server]: 
+	smoother_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1741077361.256718255] [smoother_server]: Creating smoother server
+[INFO] [1741077361.266789683] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libplanner_server_core.so
+[INFO] [1741077361.270954828] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[INFO] [1741077361.272158155] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_planner::PlannerServer>
+[INFO] [1741077361.310092434] [lifecycle_manager_localization]: Server map_server connected with bond.
+[INFO] [1741077361.310370933] [lifecycle_manager_localization]: [34m[1mManaged nodes are active[0m[0m
+[INFO] [1741077361.310661376] [lifecycle_manager_localization]: [34m[1mCreating bond timer...[0m[0m
+[INFO] [1741077361.390666636] [planner_server]: 
+	planner_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1741077361.399482663] [planner_server]: Creating
+[INFO] [1741077361.579024468] [global_costmap.global_costmap]: 
+	global_costmap lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1741077361.594774347] [global_costmap.global_costmap]: Creating Costmap
+[INFO] [1741077361.653665867] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libbehavior_server_core.so
+[INFO] [1741077361.660593645] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[INFO] [1741077361.661517992] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<behavior_server::BehaviorServer>
+[INFO] [1741077361.820664776] [behavior_server]: 
+	behavior_server lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1741077361.865955016] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libbt_navigator_core.so
+[INFO] [1741077361.873076904] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[INFO] [1741077361.873186570] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_bt_navigator::BtNavigator>
+[INFO] [1741077362.091860519] [bt_navigator]: 
+	bt_navigator lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1741077362.105184837] [bt_navigator]: Creating
+[INFO] [1741077362.128350399] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libwaypoint_follower_core.so
+[INFO] [1741077362.133853315] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[INFO] [1741077362.133954610] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_waypoint_follower::WaypointFollower>
+[INFO] [1741077362.278793970] [waypoint_follower]: 
+	waypoint_follower lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1741077362.283592500] [waypoint_follower]: Creating
+[INFO] [1741077362.309861565] [nav2_container]: Load Library: /opt/ros/jazzy/lib/libvelocity_smoother_core.so
+[INFO] [1741077362.311687703] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[INFO] [1741077362.311748203] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_velocity_smoother::VelocitySmoother>
+[INFO] [1741077362.454376334] [velocity_smoother]: 
+	velocity_smoother lifecycle node launched. 
+	Waiting on external lifecycle transitions to activate
+	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[INFO] [1741077362.473118493] [nav2_container]: Found class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[INFO] [1741077362.473204752] [nav2_container]: Instantiate class: rclcpp_components::NodeFactoryTemplate<nav2_lifecycle_manager::LifecycleManager>
+[INFO] [1741077362.591181977] [lifecycle_manager_navigation]: Creating
+[INFO] [1741077362.598219421] [lifecycle_manager_navigation]: [34m[1mCreating and initializing lifecycle service clients[0m[0m
+[INFO] [1741077362.746808632] [lifecycle_manager_navigation]: [34m[1mStarting managed nodes bringup...[0m[0m
+[INFO] [1741077362.746880853] [lifecycle_manager_navigation]: [34m[1mConfiguring controller_server[0m[0m
+[INFO] [1741077362.747291481] [controller_server]: Configuring controller interface
+[INFO] [1741077362.747401110] [controller_server]: getting progress checker plugins..
+[INFO] [1741077362.749492673] [controller_server]: getting goal checker plugins..
+[INFO] [1741077362.751914901] [controller_server]: Controller frequency set to 20.0000Hz
+[INFO] [1741077362.752395861] [local_costmap.local_costmap]: Configuring
+[INFO] [1741077362.831305738] [local_costmap.local_costmap]: Using plugin "voxel_layer"
+[INFO] [1741077362.839062678] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[INFO] [1741077362.899241155] [local_costmap.local_costmap]: Initialized plugin "voxel_layer"
+[INFO] [1741077362.899323229] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[INFO] [1741077362.905116716] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[ERROR] [1741077362.988759235] [local_costmap.local_costmap]: The configured inflation radius (0.050) is smaller than the computed inscribed radius (0.060) of your footprint, it is highly recommended to set inflation radius to be at least as big as the inscribed radius to avoid collisions
+[INFO] [1741077363.045822024] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[INFO] [1741077363.054876458] [controller_server]: Controller Server has progress_checker  progress checkers available.
+[INFO] [1741077363.057841868] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[INFO] [1741077363.064039687] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[INFO] [1741077363.073556988] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[INFO] [1741077363.096526088] [controller_server]: Setting transform_tolerance to 0.200000
+[INFO] [1741077363.227763169] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[INFO] [1741077363.251244007] [controller_server]: Critic plugin initialized
+[INFO] [1741077363.255546133] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[INFO] [1741077363.260289904] [controller_server]: Critic plugin initialized
+[INFO] [1741077363.260592069] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[INFO] [1741077363.260987567] [controller_server]: Critic plugin initialized
+[INFO] [1741077363.261182862] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[INFO] [1741077363.264043013] [controller_server]: Critic plugin initialized
+[INFO] [1741077363.265159600] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[INFO] [1741077363.269303263] [controller_server]: Critic plugin initialized
+[INFO] [1741077363.270756478] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[INFO] [1741077363.273133150] [controller_server]: Critic plugin initialized
+[INFO] [1741077363.274566439] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[INFO] [1741077363.275885951] [controller_server]: Critic plugin initialized
+[INFO] [1741077363.275966061] [controller_server]: Controller Server has FollowPath  controllers available.
+[INFO] [1741077363.327695268] [lifecycle_manager_navigation]: [34m[1mConfiguring smoother_server[0m[0m
+[INFO] [1741077363.328292135] [smoother_server]: Configuring smoother server
+[INFO] [1741077363.433894815] [smoother_server]: Created smoother : simple_smoother of type nav2_smoother::SimpleSmoother
+[INFO] [1741077363.464577578] [smoother_server]: Smoother Server has simple_smoother  smoothers available.
+[INFO] [1741077363.530454561] [lifecycle_manager_navigation]: [34m[1mConfiguring planner_server[0m[0m
+[INFO] [1741077363.530954725] [planner_server]: Configuring
+[INFO] [1741077363.531126595] [global_costmap.global_costmap]: Configuring
+[INFO] [1741077363.627002771] [global_costmap.global_costmap]: Using plugin "static_layer"
+[INFO] [1741077363.632532371] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[INFO] [1741077363.636926977] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[INFO] [1741077363.637520752] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[INFO] [1741077363.648948506] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[INFO] [1741077363.698979703] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[INFO] [1741077363.699886810] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[INFO] [1741077363.710203662] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[ERROR] [1741077363.854237786] [global_costmap.global_costmap]: The configured inflation radius (0.050) is smaller than the computed inscribed radius (0.245) of your footprint, it is highly recommended to set inflation radius to be at least as big as the inscribed radius to avoid collisions
+[INFO] [1741077363.891331478] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 207 X 293 at 0.050000 m/pix
+[INFO] [1741077363.896407896] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner::NavfnPlanner
+[INFO] [1741077363.896488229] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[INFO] [1741077363.902023569] [planner_server]: Planner Server has GridBased  planners available.
+[INFO] [1741077363.978230498] [lifecycle_manager_navigation]: [34m[1mConfiguring behavior_server[0m[0m
+[INFO] [1741077363.982091385] [behavior_server]: Configuring
+[INFO] [1741077364.051537109] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors::Spin
+[INFO] [1741077364.078564780] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors::BackUp
+[INFO] [1741077364.085111801] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors::DriveOnHeading
+[INFO] [1741077364.092438984] [behavior_server]: Creating behavior plugin assisted_teleop of type nav2_behaviors::AssistedTeleop
+[INFO] [1741077364.101469048] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors::Wait
+[INFO] [1741077364.115277900] [behavior_server]: Configuring spin
+[INFO] [1741077364.161009287] [behavior_server]: Configuring backup
+[INFO] [1741077364.184112368] [behavior_server]: Configuring drive_on_heading
+[INFO] [1741077364.208447017] [behavior_server]: Configuring assisted_teleop
+[INFO] [1741077364.283114454] [behavior_server]: Configuring wait
+[INFO] [1741077364.390091275] [lifecycle_manager_navigation]: [34m[1mConfiguring bt_navigator[0m[0m
+[INFO] [1741077364.392582095] [bt_navigator]: Configuring
+[INFO] [1741077364.445137612] [bt_navigator]: Creating navigator id navigate_to_pose of type nav2_bt_navigator::NavigateToPoseNavigator
+[INFO] [1741077364.851291289] [bt_navigator]: Creating navigator id navigate_through_poses of type nav2_bt_navigator::NavigateThroughPosesNavigator
+[INFO] [1741077365.043427084] [lifecycle_manager_navigation]: [34m[1mConfiguring waypoint_follower[0m[0m
+[INFO] [1741077365.048645834] [waypoint_follower]: Configuring
+[INFO] [1741077365.276125442] [waypoint_follower]: Created waypoint_task_executor : wait_at_waypoint of type nav2_waypoint_follower::WaitAtWaypoint
+[INFO] [1741077365.292945131] [lifecycle_manager_navigation]: [34m[1mConfiguring velocity_smoother[0m[0m
+[INFO] [1741077365.295733060] [velocity_smoother]: Configuring velocity smoother
+[INFO] [1741077365.367196237] [lifecycle_manager_navigation]: [34m[1mActivating controller_server[0m[0m
+[INFO] [1741077365.368070454] [controller_server]: Activating
+[INFO] [1741077365.368217546] [local_costmap.local_costmap]: Activating
+[INFO] [1741077365.368256009] [local_costmap.local_costmap]: Checking transform
+[INFO] [1741077365.368584489] [local_costmap.local_costmap]: start
+[INFO] [1741077365.574168398] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[INFO] [1741077365.710213991] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[INFO] [1741077365.710461045] [lifecycle_manager_navigation]: [34m[1mActivating smoother_server[0m[0m
+[INFO] [1741077365.714095452] [smoother_server]: Activating
+[INFO] [1741077365.714314895] [smoother_server]: Creating bond (smoother_server) to lifecycle manager.
+[INFO] [1741077365.858433760] [lifecycle_manager_navigation]: Server smoother_server connected with bond.
+[INFO] [1741077365.858523945] [lifecycle_manager_navigation]: [34m[1mActivating planner_server[0m[0m
+[INFO] [1741077365.858952720] [planner_server]: Activating
+[INFO] [1741077365.859033312] [global_costmap.global_costmap]: Activating
+[INFO] [1741077365.859063553] [global_costmap.global_costmap]: Checking transform
+[INFO] [1741077365.859215589] [global_costmap.global_costmap]: start
+[INFO] [1741077366.915781541] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[INFO] [1741077366.930093983] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[INFO] [1741077367.063326740] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[INFO] [1741077367.063594535] [lifecycle_manager_navigation]: [34m[1mActivating behavior_server[0m[0m
+[INFO] [1741077367.068355732] [behavior_server]: Activating
+[INFO] [1741077367.068557546] [behavior_server]: Activating spin
+[INFO] [1741077367.068665823] [behavior_server]: Activating backup
+[INFO] [1741077367.068723656] [behavior_server]: Activating drive_on_heading
+[INFO] [1741077367.068762156] [behavior_server]: Activating assisted_teleop
+[INFO] [1741077367.068808692] [behavior_server]: Activating wait
+[INFO] [1741077367.068865211] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[INFO] [1741077367.205045804] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[INFO] [1741077367.205110507] [lifecycle_manager_navigation]: [34m[1mActivating bt_navigator[0m[0m
+[INFO] [1741077367.205573634] [bt_navigator]: Activating
+[INFO] [1741077367.996561756] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[INFO] [1741077368.124073895] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[INFO] [1741077368.124253802] [lifecycle_manager_navigation]: [34m[1mActivating waypoint_follower[0m[0m
+[INFO] [1741077368.128436576] [waypoint_follower]: Activating
+[INFO] [1741077368.128595390] [waypoint_follower]: Creating bond (waypoint_follower) to lifecycle manager.
+[INFO] [1741077368.270677452] [lifecycle_manager_navigation]: Server waypoint_follower connected with bond.
+[INFO] [1741077368.270817414] [lifecycle_manager_navigation]: [34m[1mActivating velocity_smoother[0m[0m
+[INFO] [1741077368.273968582] [velocity_smoother]: Activating
+[INFO] [1741077368.274260488] [velocity_smoother]: Creating bond (velocity_smoother) to lifecycle manager.
+[INFO] [1741077368.431568118] [lifecycle_manager_navigation]: Server velocity_smoother connected with bond.
+[INFO] [1741077368.431635006] [lifecycle_manager_navigation]: [34m[1mManaged nodes are active[0m[0m
+[INFO] [1741077368.431650099] [lifecycle_manager_navigation]: [34m[1mCreating bond timer...[0m[0m
+[INFO] [1741077375.087858591] [bt_navigator]: Begin navigating from current location (0.01, 0.00) to (3.00, 0.95)
+[INFO] [1741077375.192422020] [controller_server]: Received a goal, begin computing control effort.
+[WARN] [1741077375.192546556] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[WARN] [1741077375.192580297] [controller_server]: No progress checker was specified in parameter 'current_progress_checker'. Server will use only plugin loaded progress_checker . This warning will appear once.
+[WARN] [1741077375.594717747] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.6920 Hz.
+[INFO] [1741077376.243024139] [controller_server]: Passing new path to controller.
+[WARN] [1741077376.346340909] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 18.8614 Hz.
+[INFO] [1741077377.293046876] [controller_server]: Passing new path to controller.
+[INFO] [1741077378.293027693] [controller_server]: Passing new path to controller.
+[WARN] [1741077378.647432398] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 18.3924 Hz.
+[INFO] [1741077379.343838042] [controller_server]: Passing new path to controller.
+[WARN] [1741077379.663673819] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 14.1636 Hz.
+[INFO] [1741077380.393348029] [controller_server]: Passing new path to controller.
+[WARN] [1741077380.452985623] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 16.7654 Hz.
+[INFO] [1741077380.643730118] [controller_server]: Cancellation was successful. Stopping the robot.
+[INFO] [1741077380.643862376] [controller_server]: [follow_path] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1741077380.655519982] [bt_navigator]: [navigate_to_pose] [ActionServer] Client requested to cancel the goal. Cancelling.
+[INFO] [1741077380.659463090] [bt_navigator]: Goal canceled
+[INFO] [1741077439.559331860] [bt_navigator]: Begin navigating from current location (2.92, 0.38) to (4.92, 0.48)
+[INFO] [1741077439.586661923] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1741077440.639152348] [controller_server]: Passing new path to controller.
+[WARN] [1741077440.994330763] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 17.5293 Hz.
+[INFO] [1741077441.637234054] [controller_server]: Passing new path to controller.
+[INFO] [1741077442.638848225] [controller_server]: Passing new path to controller.
+[INFO] [1741077443.687244454] [controller_server]: Passing new path to controller.
+[INFO] [1741077444.687245286] [controller_server]: Passing new path to controller.
+[WARN] [1741077444.991838186] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 18.4242 Hz.
+[INFO] [1741077445.738009155] [controller_server]: Passing new path to controller.
+[INFO] [1741077446.737254717] [controller_server]: Passing new path to controller.
+[WARN] [1741077447.440319520] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.0448 Hz.
+[INFO] [1741077447.787234150] [controller_server]: Passing new path to controller.
+[INFO] [1741077448.837232177] [controller_server]: Passing new path to controller.
+[INFO] [1741077449.612255708] [controller_server]: Reached the goal!
+[INFO] [1741077449.641246189] [bt_navigator]: Goal succeeded
+[INFO] [1741077456.791896764] [bt_navigator]: Begin navigating from current location (4.68, 0.42) to (2.22, 0.29)
+[INFO] [1741077456.816054252] [controller_server]: Received a goal, begin computing control effort.
+[WARN] [1741077457.545181417] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 13.0346 Hz.
+[INFO] [1741077457.867050940] [controller_server]: Passing new path to controller.
+[INFO] [1741077458.922600070] [controller_server]: Passing new path to controller.
+[WARN] [1741077458.975093116] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.0417 Hz.
+[WARN] [1741077459.272215952] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 18.0015 Hz.
+[INFO] [1741077459.916563849] [controller_server]: Passing new path to controller.
+[INFO] [1741077460.966831009] [controller_server]: Passing new path to controller.
+[WARN] [1741077461.222624668] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 23.8955 Hz.
+[WARN] [1741077461.337327398] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 8.7342 Hz.
+[INFO] [1741077461.987409268] [controller_server]: Passing new path to controller.
+[WARN] [1741077462.346682010] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 17.1558 Hz.
+[INFO] [1741077463.037667043] [controller_server]: Passing new path to controller.
+[WARN] [1741077463.649713368] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 16.6574 Hz.
+[INFO] [1741077464.037426356] [controller_server]: Passing new path to controller.
+[WARN] [1741077464.839511807] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 20.6886 Hz.
+[INFO] [1741077465.090953155] [controller_server]: Passing new path to controller.
+[WARN] [1741077465.838758069] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 20.3850 Hz.
+[WARN] [1741077466.058768282] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 14.0156 Hz.
+[INFO] [1741077466.087423896] [controller_server]: Passing new path to controller.
+[WARN] [1741077466.454727396] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 15.0138 Hz.
+[WARN] [1741077466.642843587] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 18.1905 Hz.
+[WARN] [1741077466.704725068] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 16.1833 Hz.
+[WARN] [1741077466.794761832] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.1188 Hz.
+[WARN] [1741077466.999449271] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 17.6207 Hz.
+[WARN] [1741077467.048671632] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 20.3572 Hz.
+[INFO] [1741077467.094861563] [controller_server]: Passing new path to controller.
+[INFO] [1741077468.145839715] [controller_server]: Passing new path to controller.
+[INFO] [1741077469.195176636] [controller_server]: Passing new path to controller.
+[INFO] [1741077470.195202977] [controller_server]: Passing new path to controller.
+[WARN] [1741077470.301745250] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 18.5412 Hz.
+[WARN] [1741077470.799975624] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.2966 Hz.
+[ERROR] [1741077470.826678581] [DWBLocalPlanner]: No valid trajectories out of 419! 
+[ERROR] [1741077470.827077171] [DWBLocalPlanner]: 1.00: BaseObstacle/Trajectory Hits Obstacle.
+[WARN] [1741077470.832085813] [controller_server]: Could not find a legal trajectory: No valid trajectories out of 419! 
+[INFO] [1741077471.194927246] [controller_server]: Passing new path to controller.
+[INFO] [1741077471.797541609] [controller_server]: Reached the goal!
+[INFO] [1741077471.831088365] [bt_navigator]: Goal succeeded
+[INFO] [1741077491.950127793] [bt_navigator]: Begin navigating from current location (2.46, 0.35) to (2.97, 0.34)
+[INFO] [1741077491.971665851] [controller_server]: Received a goal, begin computing control effort.
+[WARN] [1741077492.524621893] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.0490 Hz.
+[INFO] [1741077493.022137771] [controller_server]: Passing new path to controller.
+[WARN] [1741077493.938225870] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 15.3736 Hz.
+[INFO] [1741077494.022167243] [controller_server]: Passing new path to controller.
+[WARN] [1741077494.785303578] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 15.9035 Hz.
+[WARN] [1741077494.833481872] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 20.7892 Hz.
+[INFO] [1741077495.072188705] [controller_server]: Passing new path to controller.
+[WARN] [1741077495.297921122] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 8.3722 Hz.
+[WARN] [1741077495.457122263] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 13.0075 Hz.
+[INFO] [1741077495.501862464] [controller_server]: Reached the goal!
+[INFO] [1741077495.524143592] [bt_navigator]: Goal succeeded
+[INFO] [1741077506.874397244] [bt_navigator]: Begin navigating from current location (2.77, 0.44) to (1.98, 0.20)
+[INFO] [1741077506.896143839] [controller_server]: Received a goal, begin computing control effort.
+[INFO] [1741077507.947541536] [controller_server]: Passing new path to controller.
+[INFO] [1741077508.997292189] [controller_server]: Passing new path to controller.
+[WARN] [1741077509.674781805] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 13.2926 Hz.
+[WARN] [1741077509.720224280] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 22.0713 Hz.
+[INFO] [1741077510.047872024] [controller_server]: Passing new path to controller.
+[WARN] [1741077510.192980240] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.0313 Hz.
+[WARN] [1741077510.239448469] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 21.5563 Hz.
+[WARN] [1741077510.253790823] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 70.3567 Hz.
+[WARN] [1741077510.598735591] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.5933 Hz.
+[INFO] [1741077510.728903864] [controller_server]: Reached the goal!
+[INFO] [1741077510.735950162] [bt_navigator]: Goal succeeded
+[INFO] [1741077520.631857940] [bt_navigator]: Begin navigating from current location (2.23, 0.29) to (3.97, 0.34)
+[INFO] [1741077520.661332792] [controller_server]: Received a goal, begin computing control effort.
+[WARN] [1741077521.014914466] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 18.9333 Hz.
+[INFO] [1741077521.712082496] [controller_server]: Passing new path to controller.
+[WARN] [1741077521.865073730] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.1235 Hz.
+[WARN] [1741077522.224438117] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 16.9654 Hz.
+[WARN] [1741077522.281882237] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 17.4352 Hz.
+[WARN] [1741077522.317075079] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 28.5020 Hz.
+[WARN] [1741077522.465133357] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.9773 Hz.
+[INFO] [1741077522.763767122] [controller_server]: Passing new path to controller.
+[WARN] [1741077522.855910290] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.8521 Hz.
+[WARN] [1741077522.879907022] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 42.0601 Hz.
+[WARN] [1741077523.365755592] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.2708 Hz.
+[WARN] [1741077523.416905225] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.6092 Hz.
+[WARN] [1741077523.519721062] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.5925 Hz.
+[WARN] [1741077523.782124805] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 18.2918 Hz.
+[INFO] [1741077523.782228749] [controller_server]: Passing new path to controller.
+[WARN] [1741077523.815795470] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 29.7924 Hz.
+[WARN] [1741077523.960150822] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.1830 Hz.
+[WARN] [1741077523.983470854] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 43.0469 Hz.
+[WARN] [1741077524.017577739] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 29.4231 Hz.
+[WARN] [1741077524.448577213] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.7416 Hz.
+[WARN] [1741077524.563729304] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.2131 Hz.
+[WARN] [1741077524.773981049] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 17.0472 Hz.
+[INFO] [1741077524.823187617] [controller_server]: Passing new path to controller.
+[WARN] [1741077524.864837039] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 24.0035 Hz.
+[WARN] [1741077525.271849170] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 17.4402 Hz.
+[WARN] [1741077525.657341632] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.7048 Hz.
+[WARN] [1741077525.671870911] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 69.3450 Hz.
+[WARN] [1741077525.814491013] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.9188 Hz.
+[INFO] [1741077525.814602531] [controller_server]: Passing new path to controller.
+[WARN] [1741077525.866781103] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.1627 Hz.
+[WARN] [1741077526.131916297] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 15.1124 Hz.
+[INFO] [1741077526.865162058] [controller_server]: Passing new path to controller.
+[WARN] [1741077527.118598532] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.0416 Hz.
+[WARN] [1741077527.377202573] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 15.7796 Hz.
+[INFO] [1741077527.913930891] [controller_server]: Passing new path to controller.
+[WARN] [1741077527.964282362] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.8502 Hz.
+[WARN] [1741077528.619161831] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 23.3719 Hz.
+[WARN] [1741077528.690846788] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 13.9718 Hz.
+[INFO] [1741077528.915759201] [controller_server]: Passing new path to controller.
+[WARN] [1741077529.766197269] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 20.2185 Hz.
+[WARN] [1741077529.829073418] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 15.9420 Hz.
+[WARN] [1741077529.873893861] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 24.6275 Hz.
+[INFO] [1741077529.914263270] [controller_server]: Passing new path to controller.
+[INFO] [1741077530.392222402] [controller_server]: Reached the goal!
+[INFO] [1741077530.416932649] [bt_navigator]: Goal succeeded
+[INFO] [1741077541.114946443] [bt_navigator]: Begin navigating from current location (3.78, 0.35) to (2.27, 0.31)
+[INFO] [1741077541.129158613] [controller_server]: Received a goal, begin computing control effort.
+[WARN] [1741077541.237773091] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.1432 Hz.
+[WARN] [1741077541.354839712] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 13.6815 Hz.
+[WARN] [1741077541.396927021] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 23.8097 Hz.
+[WARN] [1741077541.432309271] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 29.0050 Hz.
+[WARN] [1741077541.541378524] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 9.1744 Hz.
+[WARN] [1741077541.692753344] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 26.9711 Hz.
+[WARN] [1741077541.793407195] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 10.0149 Hz.
+[WARN] [1741077541.950102582] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 18.4149 Hz.
+[WARN] [1741077542.172138699] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 8.2912 Hz.
+[INFO] [1741077542.239681529] [controller_server]: Passing new path to controller.
+[WARN] [1741077542.374974152] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 16.6541 Hz.
+[WARN] [1741077542.738895693] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 15.1400 Hz.
+[WARN] [1741077542.778330052] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 25.4191 Hz.
+[WARN] [1741077542.851567688] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 13.6724 Hz.
+[WARN] [1741077542.909983842] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 17.4165 Hz.
+[WARN] [1741077542.929228561] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 54.0385 Hz.
+[WARN] [1741077543.082139707] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 17.1757 Hz.
+[WARN] [1741077543.150224517] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 14.7094 Hz.
+[WARN] [1741077543.198249648] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 20.8642 Hz.
+[INFO] [1741077543.198338222] [controller_server]: Passing new path to controller.
+[WARN] [1741077543.245228525] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 21.3348 Hz.
+[WARN] [1741077543.300400269] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 18.2410 Hz.
+[WARN] [1741077543.350594631] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.9697 Hz.
+[WARN] [1741077543.425725146] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 13.3305 Hz.
+[WARN] [1741077543.635239826] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 17.1882 Hz.
+[WARN] [1741077543.676234196] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 24.4435 Hz.
+[WARN] [1741077543.876068516] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 21.2107 Hz.
+[INFO] [1741077544.225894720] [controller_server]: Passing new path to controller.
+[WARN] [1741077544.276020101] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.9492 Hz.
+[WARN] [1741077544.386760883] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 16.6752 Hz.
+[WARN] [1741077544.429939668] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 23.6686 Hz.
+[WARN] [1741077544.675956908] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 20.8779 Hz.
+[WARN] [1741077544.855339719] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 14.0045 Hz.
+[WARN] [1741077544.886224010] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 32.5079 Hz.
+[WARN] [1741077544.943765316] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 17.7501 Hz.
+[WARN] [1741077545.099124340] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 13.7953 Hz.
+[INFO] [1741077545.276012386] [controller_server]: Passing new path to controller.
+[WARN] [1741077545.532919868] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 17.6592 Hz.
+[WARN] [1741077545.797186424] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 14.1759 Hz.
+[WARN] [1741077546.181377773] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 18.6987 Hz.
+[WARN] [1741077546.243359168] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 16.1729 Hz.
+[WARN] [1741077546.285697328] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 24.2842 Hz.
+[INFO] [1741077546.285925087] [controller_server]: Passing new path to controller.
+[WARN] [1741077546.663255377] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 12.0698 Hz.
+[WARN] [1741077546.677494288] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 73.0471 Hz.
+[WARN] [1741077546.880413168] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 18.6874 Hz.
+[WARN] [1741077547.193789721] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 15.5094 Hz.
+[INFO] [1741077547.275864406] [controller_server]: Passing new path to controller.
+[WARN] [1741077547.386231617] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 16.5556 Hz.
+[WARN] [1741077547.668527732] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.3832 Hz.
+[WARN] [1741077547.701206218] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 30.8571 Hz.
+[WARN] [1741077547.729382744] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 35.6874 Hz.
+[INFO] [1741077548.327654493] [controller_server]: Passing new path to controller.
+[WARN] [1741077548.629142588] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.8877 Hz.
+[WARN] [1741077549.228340425] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 19.0540 Hz.
+[INFO] [1741077549.328735260] [controller_server]: Passing new path to controller.
+[WARN] [1741077549.769500107] [controller_server]: Control loop missed its desired rate of 20.0000 Hz. Current loop rate is 11.4350 Hz.
+[INFO] [1741077549.822560418] [controller_server]: Reached the goal!
+[INFO] [1741077549.855955733] [bt_navigator]: Goal succeeded
+[INFO] [1741077552.370910782] [rclcpp]: signal_handler(signum=2)
+[INFO] [1741077552.371073762] [map_server]: Running Nav2 LifecycleNode rcl preshutdown (map_server)
+[INFO] [1741077552.382932185] [map_server]: Deactivating
+[INFO] [1741077552.383021666] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1741077552.399828897] [map_server]: Cleaning up
+[INFO] [1741077552.399927915] [map_server]: Destroying bond (map_server) to lifecycle manager.
+[INFO] [1741077552.399952267] [controller_server]: Running Nav2 LifecycleNode rcl preshutdown (controller_server)
+[INFO] [1741077552.399994008] [controller_server]: Deactivating
+[INFO] [1741077552.400072896] [local_costmap.local_costmap]: Deactivating
+[INFO] [1741077552.511094345] [lifecycle_manager_localization]: [34m[1mHave not received a heartbeat from map_server.[0m[0m
+[ERROR] [1741077552.511176178] [lifecycle_manager_localization]: CRITICAL FAILURE: SERVER map_server IS DOWN after not receiving a heartbeat for 4000 ms. Shutting down related nodes.
+[INFO] [1741077552.511327307] [lifecycle_manager_localization]: [34m[1mTerminating bond timer...[0m[0m
+[INFO] [1741077552.511352714] [lifecycle_manager_localization]: [34m[1mResetting managed nodes...[0m[0m
+[INFO] [1741077552.511372473] [lifecycle_manager_localization]: [34m[1mDeactivating map_server[0m[0m
+[WARN] [1741077552.518818547] [rcl_lifecycle]: No transition matching 4 found for current state unconfigured
+[ERROR] [1741077552.518870232] [map_server]: Unable to start transition 4 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[ERROR] [1741077552.524445094] [lifecycle_manager_localization]: Failed to change state for node: map_server
+[INFO] [1741077552.524562630] [lifecycle_manager_localization]: [34m[1mCleaning up map_server[0m[0m
+[WARN] [1741077552.525250404] [rcl_lifecycle]: No transition matching 2 found for current state unconfigured
+[ERROR] [1741077552.525284719] [map_server]: Unable to start transition 2 from current state unconfigured: Transition is not registered., at ./src/rcl_lifecycle.c:355
+[INFO] [1741077552.532755182] [lifecycle_manager_localization]: [34m[1mManaged nodes have been reset[0m[0m
+[INFO] [1741077552.568189265] [rclcpp]: signal_handler(signum=2)
+[INFO] [1741077552.579974818] [controller_server]: Destroying bond (controller_server) to lifecycle manager.
+[INFO] [1741077552.590602580] [controller_server]: Cleaning up
+[INFO] [1741077552.592573941] [local_costmap.local_costmap]: Cleaning up
+[INFO] [1741077552.631837523] [lifecycle_manager_navigation]: [34m[1mHave not received a heartbeat from controller_server.[0m[0m
+[ERROR] [1741077552.632024800] [lifecycle_manager_navigation]: CRITICAL FAILURE: SERVER controller_server IS DOWN after not receiving a heartbeat for 4000 ms. Shutting down related nodes.

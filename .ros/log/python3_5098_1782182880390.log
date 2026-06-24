@@ -1,0 +1,38 @@
+[INFO] [1782182884.597975301] [arm_sorter_node_v4]: 🤖 Arm Sorter V4 시작
+[INFO] [1782182884.598516781] [arm_sorter_node_v4]: 📚 /book_category 구독 중...
+[INFO] [1782182914.457688434] [arm_sorter_node_v4]: 📥 카테고리 수신: 과학
+[INFO] [1782182914.458094266] [arm_sorter_node_v4]: 🏠 HOME 복귀
+[INFO] [1782182919.069734093] [arm_sorter_node_v4]: ✋ 그리퍼 열기
+[INFO] [1782182921.691907754] [arm_sorter_node_v4]: 📍 책 위로 이동
+[INFO] [1782182926.306062387] [arm_sorter_node_v4]: ⬇️ 책 잡는 위치로 이동
+[INFO] [1782182930.929394552] [arm_sorter_node_v4]: 🤏 그리퍼 닫기
+[INFO] [1782182934.551631064] [arm_sorter_node_v4]: ⬆️ 책 들기
+[INFO] [1782182939.154847272] [arm_sorter_node_v4]: 🚚 과학 바구니로 이동
+[INFO] [1782182943.778180150] [arm_sorter_node_v4]: 📖 책 놓기
+[INFO] [1782182943.778869074] [arm_sorter_node_v4]: ✋ 그리퍼 열기
+[INFO] [1782182946.400378520] [arm_sorter_node_v4]: 🏠 HOME 복귀
+[INFO] [1782182951.014669933] [arm_sorter_node_v4]: ✅ V4 Pick & Place 분류 완료
+[INFO] [1782183424.754848452] [arm_sorter_node_v4]: 📥 카테고리 수신: 과학
+[INFO] [1782183424.755291704] [arm_sorter_node_v4]: 🏠 HOME 복귀
+[INFO] [1782183429.354417251] [arm_sorter_node_v4]: ✋ 그리퍼 열기
+[INFO] [1782183431.977149067] [arm_sorter_node_v4]: 📍 책 위로 이동
+[INFO] [1782183436.590758241] [arm_sorter_node_v4]: ⬇️ 책 잡는 위치로 이동
+[INFO] [1782183441.213931516] [arm_sorter_node_v4]: 🤏 그리퍼 닫기
+[INFO] [1782183444.836160836] [arm_sorter_node_v4]: ⬆️ 책 들기
+[INFO] [1782183449.439299115] [arm_sorter_node_v4]: 🚚 과학 바구니로 이동
+[INFO] [1782183454.062475013] [arm_sorter_node_v4]: 📖 책 놓기
+[INFO] [1782183454.063108373] [arm_sorter_node_v4]: ✋ 그리퍼 열기
+[INFO] [1782183456.684682238] [arm_sorter_node_v4]: 🏠 HOME 복귀
+[INFO] [1782183461.298845945] [arm_sorter_node_v4]: ✅ V4 Pick & Place 분류 완료
+[INFO] [1782184764.662789441] [arm_sorter_node_v4]: 📥 카테고리 수신: 역사
+[INFO] [1782184764.663241623] [arm_sorter_node_v4]: 🏠 HOME 복귀
+[INFO] [1782184769.229308677] [arm_sorter_node_v4]: ✋ 그리퍼 열기
+[INFO] [1782184771.791699619] [arm_sorter_node_v4]: 📍 책 위로 이동
+[INFO] [1782184776.405761686] [arm_sorter_node_v4]: ⬇️ 책 잡는 위치로 이동
+[INFO] [1782184781.029023317] [arm_sorter_node_v4]: 🤏 그리퍼 닫기
+[INFO] [1782184784.651189914] [arm_sorter_node_v4]: ⬆️ 책 들기
+[INFO] [1782184789.254381350] [arm_sorter_node_v4]: 🚚 역사 바구니로 이동
+[INFO] [1782184793.877622910] [arm_sorter_node_v4]: 📖 책 놓기
+[INFO] [1782184793.878272776] [arm_sorter_node_v4]: ✋ 그리퍼 열기
+[INFO] [1782184796.499826279] [arm_sorter_node_v4]: 🏠 HOME 복귀
+[INFO] [1782184801.114085024] [arm_sorter_node_v4]: ✅ V4 Pick & Place 분류 완료

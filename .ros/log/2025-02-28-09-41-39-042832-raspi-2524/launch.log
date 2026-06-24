@@ -1,0 +1,138 @@
+1740703299.0472786 [INFO] [launch]: All log files can be found below /home/pinky/.ros/log/2025-02-28-09-41-39-042832-raspi-2524
+1740703299.0474994 [INFO] [launch]: Default logging verbosity is set to INFO
+1740703299.5497708 [INFO] [robot_state_publisher-1]: process started with pid [2528]
+1740703299.5503376 [INFO] [sllidar_node-2]: process started with pid [2529]
+1740703299.5506115 [INFO] [icm20948_node-3]: process started with pid [2530]
+1740703299.5507832 [INFO] [pinky_bringup-4]: process started with pid [2531]
+1740703299.5509310 [INFO] [pinky_battery_publiser-5]: process started with pid [2532]
+1740703300.5472803 [pinky_bringup-4] [INFO] [1740703300.546958789] [pinky_bringup]: pinky is ready!!
+1740703389.3086722 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1740703389.3174286 [icm20948_node-3] Traceback (most recent call last):
+1740703389.3177054 [icm20948_node-3]   File "/home/pinky/pinky_violet/install/ros2_icm20948/lib/ros2_icm20948/icm20948_node", line 33, in <module>
+1740703389.3178589 [icm20948_node-3]     sys.exit(load_entry_point('ros2-icm20948==0.0.1', 'console_scripts', 'icm20948_node')())
+1740703389.3179853 [icm20948_node-3]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703389.3181124 [icm20948_node-3]   File "/home/pinky/pinky_violet/install/ros2_icm20948/lib/python3.12/site-packages/ros2_icm20948/icm20948_node.py", line 78, in main
+1740703389.3182139 [icm20948_node-3]     rclpy.spin(icm20948_node)
+1740703389.3183303 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 244, in spin
+1740703389.3184383 [icm20948_node-3]     executor.spin_once()
+1740703389.3185370 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 827, in spin_once
+1740703389.3186777 [icm20948_node-3]     self._spin_once_impl(timeout_sec)
+1740703389.3187842 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 811, in _spin_once_impl
+1740703389.3188884 [icm20948_node-3]     handler, entity, node = self.wait_for_ready_callbacks(
+1740703389.3189831 [icm20948_node-3]                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703389.3192043 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 781, in wait_for_ready_callbacks
+1740703389.3200998 [icm20948_node-3]     return next(self._cb_iter)
+1740703389.3204017 [icm20948_node-3]            ^^^^^^^^^^^^^^^^^^^
+1740703389.3206575 [icm20948_node-3]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/executors.py", line 685, in _wait_for_ready_callbacks
+1740703389.3209467 [icm20948_node-3]     wait_set.wait(timeout_nsec)
+1740703389.3212700 [icm20948_node-3] KeyboardInterrupt
+1740703389.4148853 [pinky_battery_publiser-5] Traceback (most recent call last):
+1740703389.4152279 [pinky_battery_publiser-5]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_battery_publiser", line 33, in <module>
+1740703389.4157405 [pinky_battery_publiser-5]     sys.exit(load_entry_point('pinky-bringup==0.0.0', 'console_scripts', 'pinky_battery_publiser')())
+1740703389.4158800 [pinky_battery_publiser-5]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703389.4159737 [pinky_battery_publiser-5]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinky_battery_publiser.py", line 38, in main
+1740703389.4179747 [pinky_battery_publiser-5]     rclpy.shutdown()
+1740703389.4184289 [pinky_battery_publiser-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/__init__.py", line 134, in shutdown
+1740703389.4205148 [pinky_battery_publiser-5]     _shutdown(context=context)
+1740703389.4219790 [pinky_battery_publiser-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/utilities.py", line 82, in shutdown
+1740703389.4224012 [pinky_battery_publiser-5]     context.shutdown()
+1740703389.4225893 [pinky_battery_publiser-5]   File "/opt/ros/jazzy/lib/python3.12/site-packages/rclpy/context.py", line 129, in shutdown
+1740703389.4227436 [pinky_battery_publiser-5]     self.__context.shutdown()
+1740703389.4228415 [pinky_battery_publiser-5] rclpy._rclpy_pybind11.RCLError: failed to shutdown: rcl_shutdown already called on the given context, at ./src/rcl/init.c:333
+1740703389.4584339 [INFO] [robot_state_publisher-1]: process has finished cleanly [pid 2528]
+1740703389.4866600 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1740703389.4879432 [pinky_bringup-4] Traceback (most recent call last):
+1740703389.4883666 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py", line 392, in _gpio_list
+1740703389.4885845 [pinky_bringup-4]     return tuple(_to_gpio(int(channel)) for channel in chanlist)
+1740703389.4888501 [pinky_bringup-4]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703389.4892445 [pinky_bringup-4] TypeError: 'int' object is not iterable
+1740703389.4896731 [pinky_bringup-4] 
+1740703389.4902623 [pinky_bringup-4] During handling of the above exception, another exception occurred:
+1740703389.4907081 [pinky_bringup-4] 
+1740703389.4930153 [pinky_bringup-4] Traceback (most recent call last):
+1740703389.4933484 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_bringup", line 33, in <module>
+1740703389.4934511 [pinky_bringup-4]     sys.exit(load_entry_point('pinky-bringup==0.0.0', 'console_scripts', 'pinky_bringup')())
+1740703389.4935210 [pinky_bringup-4]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703389.4935751 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinky_bringup.py", line 83, in main
+1740703389.4936485 [pinky_bringup-4]     pinky_bringup_node.destroy_node()
+1740703389.4937000 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinky_bringup.py", line 69, in destroy_node
+1740703389.4937656 [pinky_bringup-4]     self.pinky.disable_motor()
+1740703389.4938240 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinkylib.py", line 114, in disable_motor
+1740703389.4964650 [pinky_bringup-4]     GPIO.output(STBY, GPIO.LOW)
+1740703389.4966397 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py", line 717, in output
+1740703389.4967194 [pinky_bringup-4]     gpios = _gpio_list(channel)
+1740703389.4967742 [pinky_bringup-4]             ^^^^^^^^^^^^^^^^^^^
+1740703389.4968240 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py", line 395, in _gpio_list
+1740703389.4968717 [pinky_bringup-4]     return (_to_gpio(int(chanlist)),)
+1740703389.4969177 [pinky_bringup-4]             ^^^^^^^^^^^^^^^^^^^^^^^
+1740703389.4969592 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py", line 355, in _to_gpio
+1740703389.4969995 [pinky_bringup-4]     raise RuntimeError(
+1740703389.4984820 [pinky_bringup-4] RuntimeError: Please set pin numbering mode using GPIO.setmode(GPIO.BOARD) or GPIO.setmode(GPIO.BCM)
+1740703389.4986844 [pinky_bringup-4] Error in sys.excepthook:
+1740703389.4987488 [pinky_bringup-4] Traceback (most recent call last):
+1740703389.4987986 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 228, in partial_apport_excepthook
+1740703389.4988427 [pinky_bringup-4]     return apport_excepthook(binary, exc_type, exc_obj, exc_tb)
+1740703389.4988892 [pinky_bringup-4]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703389.4989331 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/apport_python_hook.py", line 66, in apport_excepthook
+1740703389.4989746 [pinky_bringup-4]     import apport.report
+1740703389.4990146 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/apport/__init__.py", line 8, in <module>
+1740703389.5005252 [ERROR] [icm20948_node-3]: process has died [pid 2530, exit code -2, cmd '/home/pinky/pinky_violet/install/ros2_icm20948/lib/ros2_icm20948/icm20948_node --ros-args -r __node:=icm20948_node --params-file /tmp/launch_params_mcj62wo0 --params-file /tmp/launch_params_cq0oq1xl --params-file /tmp/launch_params_nvfte61d'].
+1740703389.5014763 [pinky_bringup-4]     from apport.report import Report
+1740703389.5017037 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/apport/report.py", line 41, in <module>
+1740703389.5020113 [ERROR] [pinky_battery_publiser-5]: process has died [pid 2532, exit code -2, cmd '/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_battery_publiser --ros-args'].
+1740703389.5027111 [pinky_bringup-4]     import xml.dom.minidom
+1740703389.5029233 [pinky_bringup-4]   File "/usr/lib/python3.12/xml/dom/minidom.py", line 23, in <module>
+1740703389.5037522 [pinky_bringup-4]     from xml.dom.xmlbuilder import DOMImplementationLS, DocumentLS
+1740703389.5039792 [pinky_bringup-4]   File "/usr/lib/python3.12/xml/dom/xmlbuilder.py", line 6, in <module>
+1740703389.5041895 [pinky_bringup-4]     from xml.dom.NodeFilter import NodeFilter
+1740703389.5043397 [pinky_bringup-4]   File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+1740703389.5044873 [pinky_bringup-4]   File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+1740703389.5045648 [pinky_bringup-4]   File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+1740703389.5046339 [pinky_bringup-4]   File "<frozen importlib._bootstrap_external>", line 991, in exec_module
+1740703389.5047007 [pinky_bringup-4]   File "<frozen importlib._bootstrap_external>", line 1112, in get_code
+1740703389.5047557 [pinky_bringup-4]   File "<frozen importlib._bootstrap_external>", line 699, in _validate_timestamp_pyc
+1740703389.5048311 [pinky_bringup-4] KeyboardInterrupt
+1740703389.5055366 [pinky_bringup-4] 
+1740703389.5057895 [pinky_bringup-4] Original exception was:
+1740703389.5059981 [pinky_bringup-4] Traceback (most recent call last):
+1740703389.5061665 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py", line 392, in _gpio_list
+1740703389.5062544 [pinky_bringup-4]     return tuple(_to_gpio(int(channel)) for channel in chanlist)
+1740703389.5063341 [pinky_bringup-4]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703389.5064015 [pinky_bringup-4] TypeError: 'int' object is not iterable
+1740703389.5064640 [pinky_bringup-4] 
+1740703389.5065277 [pinky_bringup-4] During handling of the above exception, another exception occurred:
+1740703389.5065866 [pinky_bringup-4] 
+1740703389.5066414 [pinky_bringup-4] Traceback (most recent call last):
+1740703389.5067031 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_bringup", line 33, in <module>
+1740703389.5067701 [pinky_bringup-4]     sys.exit(load_entry_point('pinky-bringup==0.0.0', 'console_scripts', 'pinky_bringup')())
+1740703389.5068316 [pinky_bringup-4]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+1740703389.5068884 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinky_bringup.py", line 83, in main
+1740703389.5069516 [pinky_bringup-4]     pinky_bringup_node.destroy_node()
+1740703389.5070128 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinky_bringup.py", line 69, in destroy_node
+1740703389.5072262 [pinky_bringup-4]     self.pinky.disable_motor()
+1740703389.5073960 [pinky_bringup-4]   File "/home/pinky/pinky_violet/install/pinky_bringup/lib/python3.12/site-packages/pinky_bringup/pinkylib.py", line 114, in disable_motor
+1740703389.5074799 [pinky_bringup-4]     GPIO.output(STBY, GPIO.LOW)
+1740703389.5075436 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py", line 717, in output
+1740703389.5075998 [pinky_bringup-4]     gpios = _gpio_list(channel)
+1740703389.5076501 [pinky_bringup-4]             ^^^^^^^^^^^^^^^^^^^
+1740703389.5077007 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py", line 395, in _gpio_list
+1740703389.5077820 [pinky_bringup-4]     return (_to_gpio(int(chanlist)),)
+1740703389.5078511 [pinky_bringup-4]             ^^^^^^^^^^^^^^^^^^^^^^^
+1740703389.5079126 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py", line 355, in _to_gpio
+1740703389.5080028 [pinky_bringup-4]     raise RuntimeError(
+1740703389.5081255 [pinky_bringup-4] RuntimeError: Please set pin numbering mode using GPIO.setmode(GPIO.BOARD) or GPIO.setmode(GPIO.BCM)
+1740703389.5568511 [pinky_bringup-4] Exception ignored in: <function PWM.__del__ at 0xffff8e3cda80>
+1740703389.5570943 [pinky_bringup-4] Traceback (most recent call last):
+1740703389.5572150 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py", line 178, in __del__
+1740703389.5576410 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py", line 201, in stop
+1740703389.5577564 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/lgpio.py", line 1084, in tx_pwm
+1740703389.5578218 [pinky_bringup-4] TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+1740703389.5578756 [pinky_bringup-4] Exception ignored in: <function PWM.__del__ at 0xffff8e3cda80>
+1740703389.5579228 [pinky_bringup-4] Traceback (most recent call last):
+1740703389.5579715 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py", line 178, in __del__
+1740703389.5580373 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/RPi/GPIO/__init__.py", line 201, in stop
+1740703389.5581028 [pinky_bringup-4]   File "/usr/lib/python3/dist-packages/lgpio.py", line 1084, in tx_pwm
+1740703389.5581470 [pinky_bringup-4] TypeError: unsupported operand type(s) for &: 'NoneType' and 'int'
+1740703389.6187782 [INFO] [sllidar_node-2]: process has finished cleanly [pid 2529]
+1740703389.6547894 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1740703389.6638386 [ERROR] [pinky_bringup-4]: process has died [pid 2531, exit code -2, cmd '/home/pinky/pinky_violet/install/pinky_bringup/lib/pinky_bringup/pinky_bringup --ros-args --params-file /tmp/launch_params_n2q166q7'].

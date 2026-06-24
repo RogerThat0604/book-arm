@@ -1,0 +1,8 @@
+[INFO] [1741235138.261643805] [initialpose]: Received initial pose, processing...
+[INFO] [1741235138.267180231] [initialpose]: Latest trajectory_id: 0
+[INFO] [1741235138.283318398] [initialpose]: FinishTrajectory service called successfully
+[INFO] [1741235138.342579916] [initialpose]: StartTrajectory service called successfully
+[INFO] [1741235148.718402466] [initialpose]: Received initial pose, processing...
+[INFO] [1741235148.733087225] [initialpose]: Latest trajectory_id: 1
+[INFO] [1741235148.793270132] [initialpose]: FinishTrajectory service called successfully
+[INFO] [1741235148.844727114] [initialpose]: StartTrajectory service called successfully

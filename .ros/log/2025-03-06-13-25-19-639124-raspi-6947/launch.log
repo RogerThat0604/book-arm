@@ -1,0 +1,7 @@
+1741235119.6418891 [INFO] [launch]: All log files can be found below /home/pinky/.ros/log/2025-03-06-13-25-19-639124-raspi-6947
+1741235119.6423483 [INFO] [launch]: Default logging verbosity is set to INFO
+1741235120.1765897 [INFO] [rviz2-1]: process started with pid [7001]
+1741235181.0453136 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT)
+1741235181.2390769 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741235181.3222237 [WARNING] [launch]: user interrupted with ctrl-c (SIGINT) again, ignoring...
+1741235181.7719142 [INFO] [rviz2-1]: process has finished cleanly [pid 7001]
