@@ -1450,3 +1450,59 @@ python3 aruco_ibvs_robot.py
 robothome
 python3 aruco_ibvs_robot.py 
 python3
+jetcobot
+cd test/
+ls
+python3 aruco_ibvs_robot.py 
+robothome
+python3 aruco_ibvs_robot.py 
+robothome
+python3 aruco_ibvs_robot.py 
+robothome
+python3 aruco_ibvs_robot.py 
+robothome
+python3 aruco_ibvs_robot.py 
+robothome
+python3 aruco_ibvs_robot.py 
+ls
+jetcobot
+robothome
+python3 aruco_ibvs_robot.py 
+cd test
+python3 aruco_ibvs_robot.py 
+robotstatus
+robothome
+python3
+python3 - <<'PY'
+from pymycobot.mycobot import MyCobot
+import time
+
+mc = MyCobot('/dev/ttyUSB0', 1000000)
+
+print("power on")
+mc.power_on()
+time.sleep(2)
+
+print("angles:", mc.get_angles())
+
+print("move test")
+mc.send_angles([0, 0, 0, 0, 0, 0], 20)
+time.sleep(3)
+
+mc.send_angles([10, 0, 0, 0, 0, 0], 20)
+time.sleep(3)
+
+mc.send_angles([0, 0, 0, 0, 0, 0], 20)
+time.sleep(3)
+
+print("done")
+PY
+
+python3 book_tracker_pick.py
+python3 -c "import pyrealsense2 as rs; print('realsense ok')"
+sudo apt update
+sudo apt install -y librealsense2-utils librealsense2-dev
+rs-enumerate-devices
+pip install pyrealsense2
+ls
+ㅣㄴ

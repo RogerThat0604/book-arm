@@ -1,0 +1,14 @@
+{
+  "socketPath": "/tmp/mcp-zewAKQ/mcp.sock",
+  "scheme": "unix",
+  "headers": {
+    "Authorization": "Nonce 557e0f7d-46c7-4bdc-b961-021bd7a88f5f"
+  },
+  "pid": 19677,
+  "ideName": "Visual Studio Code",
+  "timestamp": 1782284005408,
+  "workspaceFolders": [
+    "/home/jetcobot"
+  ],
+  "isTrusted": true
+}
