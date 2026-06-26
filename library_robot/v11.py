@@ -66,6 +66,15 @@ PULL_OUT_MM   = 60            # 책 잡고 뒤로 빼는 거리
 PUSH_IN_MM    = 50            # 책장에 밀어넣는 거리
 APPROACH_MM   = 40            # 책 앞으로 접근하는 거리
 
+# 영문 카테고리(DB) → 한글 카테고리(BASKET 자세) 매핑
+# DB cb_books.category 컬럼은 영문 표기를 사용함
+CATEGORY_MAP = {
+    "literature": "문학",
+    "science":    "과학",
+    "history":    "역사",
+    "art":        "예술",     # 사용 시 BASKET_예술 자세 추가 필요
+}
+
 # 카테고리 → 자세 매핑
 CATEGORY_POSES = {
     "과학": "BASKET_과학",
@@ -216,7 +225,14 @@ def process_one_book(mc, pipeline, align, dry_run=False):
     # 3) 가장 가까운(큰) 책 선택
     target = books[0]
     info = target["book"]
-    print(f"\n🎯 선택: ID:{target['id']} '{info['title']}' [{info['category']}]")
+
+    # 영문 카테고리 → 한글로 변환 (BASKET 자세 매칭용)
+    db_category = info["category"]                          # ← 추가
+    category    = CATEGORY_MAP.get(db_category, db_category)  # ← 추가
+    info["category"] = category                             # ← 추가 (이후 코드 호환)
+
+    print(f"\n🎯 선택: ID:{target['id']} '{info['title']}' "
+        f"[{db_category} → {category}]")
 
     if dry_run:
         print("  (dry-run 모드: 동작 없이 종료)")
